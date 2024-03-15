@@ -1,0 +1,61 @@
+.follower-modal {
+  .modal-content {
+    height: 472px;
+    width: 722px;
+    border: 1px solid var(--black);
+    border-radius: 0;
+    .modal-header {
+      padding-right: 11px;
+      .btn-close {
+        background: url("../../assets/icon/close-small.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .modal-body {
+      overflow-y: auto;
+      .follower {
+        @include d-center;
+        .follower-img {
+          width: 50px;
+          height: 50px;
+          border: 1px solid var(--black);
+          padding: 2px;
+          border-radius: 100%;
+          margin-right: 10px;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        border-left: 1px solid var(--grey);
+        padding: 0 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--medium-grey);
+        padding: 10px;
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .follower-modal {
+    .modal-dialog {
+      margin: 0;
+    }
+    .modal-content {
+      height: 100vh;
+      width: 100%;
+      border: none;
+    }
+  }
+}

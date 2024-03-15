@@ -1,0 +1,83 @@
+.admin-listTable {
+  .black-list-content {
+    .search-blocklist {
+      .search-form {
+        max-width: 295px;
+        height: 41px;
+      }
+      .right {
+      }
+    }
+
+    .block-collections {
+      .blocktable {
+        .table-row {
+          height: 85px;
+          @include d-center;
+          .collection-name {
+            max-width: 350px;
+            width: 100%;
+            .left {
+              margin-right: 7px;
+              img {
+                width: 43px;
+                height: 43px;
+                padding: 2px;
+                border: 1.3px solid var(--black);
+              }
+            }
+            .right {
+              width: 100%;
+            }
+          }
+          .date {
+            max-width: 140px;
+            width: 100%;
+          }
+          .address {
+            max-width: 150px;
+            width: 100%;
+          }
+          .remove {
+            width: 100%;
+            max-width: 60px;
+            @include flex-center(flex-end);
+          }
+        }
+
+        .table-data {
+          border-bottom: 1px solid var(--lightest-grey);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .admin-listTable {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-listTable {
+    padding-left: 16px;
+    padding-right: 16px;
+    .black-list-content {
+      .block-collections {
+        .blocktable {
+          .table-row {
+            .date {
+              max-width: 75px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

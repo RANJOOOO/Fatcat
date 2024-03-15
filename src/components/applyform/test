@@ -1,0 +1,312 @@
+     <div className="Applyform-main">
+          <div className="top">
+            <img src="/asset/Apply form/top_logo_white.svg" alt="..." />
+            <h1>Submit Your Artist Profile</h1>
+            <p>
+              we’re currently in early access mode, only onboarding a small
+              number of artists eachmonth .
+            </p>
+            <p>
+              However we’re hard at work scaling up our platform to meet the
+              high demand we’re experiencing.
+            </p>
+            <p>
+              This form is to submit your artist profile so you’re on our radar
+              ahead of our full launch next year.{" "}
+            </p>
+            <p>
+              You may not get a response in the near term-please understand that
+              we’re overloaded in the short term but are doing everything we can
+              to accommodate higher capacity in the future.
+            </p>
+
+            <label> Submitted art work guidlines:</label>
+            <ul>
+              <li>Must be original and created by you</li>
+              <li>Created digitally </li>
+              <li>
+                Must not be tokenized available for digital purchase elsewhere
+                on the internet
+              </li>
+              <li>You consider this to be some of your best work</li>
+              <li>No illegal stuff,please</li>
+            </ul>
+            <span>Thank you for getting in touch!</span>
+          </div>
+
+          <div className="form-box">
+            <label className="required">
+              Name <span>*</span>
+            </label>
+
+            <label>First and Last name</label>
+            <input type="text" placeholder="Write Your Name" />
+
+            <div className="mb-14">
+              <InputBox
+                label="user name"
+                subLabel="Required *"
+                placeholder="MyUsername_"
+                type="text"
+                // name="userName" // Add name attribute for identification
+                // value={formData?.userName}
+                // onChange={handleChange}
+                // disabled={userData?.userName ? "disabled" : ""}
+                {...register("fullname", {
+                  required: true,
+                })}
+              />
+              <p className="warning ps-2">
+                {/* {errorFlags?.userName ? "Please put username" : ""}
+                {userNameError ? "Username Already exists" : ""} */}
+              </p>
+            </div>
+            <br></br>
+            {errors?.fullname?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+            {errors?.fullname?.type === "maxLength" && (
+              <p className="customRed">Item name cannot exceed 20 characters</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label className="required">
+              Your artist website / portfolio <span>*</span>
+            </label>
+            {/* <p>Your artist website / portfolio </p> */}
+            <input
+              type="text"
+              placeholder="Website Link"
+              {...register("portfolio", {
+                required: true,
+              })}
+            />
+            <br></br>
+            {errors?.portfolio?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label>Instagram (Include entire URL) </label>
+            <input
+              type="text"
+              placeholder="URL"
+              {...register("instagram", {
+                pattern:
+                  "(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?",
+              })}
+            />
+            <br></br>
+            {errors?.instagram?.type === "pattern" && (
+              <p className="customRed">Invalid Url</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label>Twitter (Include entire URL) </label>
+            <input
+              type="text"
+              placeholder="URL"
+              {...register("twitter", {
+                pattern:
+                  "(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?",
+              })}
+            />
+            <br></br>
+            {errors?.twitter?.type === "pattern" && (
+              <p className="customRed">Invalid Url</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label>
+              Additional website / social links (Include entire URL)
+            </label>
+            <input
+              type="text"
+              placeholder="URL"
+              {...register("additionalLinks", {
+                pattern:
+                  "(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?",
+              })}
+            />
+            <br></br>
+            {errors?.additionalLinks?.type === "pattern" && (
+              <p className="customRed">Invalid Url</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label className="required">
+              Email <span>*</span>
+            </label>
+            {/* <p>Email </p> */}
+            <input
+              type="email"
+              placeholder="Enter Email Address"
+              {...register("artistEmail", {
+                required: true,
+                pattern:
+                  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+              })}
+            />
+            <br></br>
+            {errors?.artistEmail?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+            {errors?.artistEmail?.type === "pattern" && (
+              <p className="customRed">Invalid Email</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label className="required">
+              Application video <span>*</span>
+            </label>
+            {/* <p>Application video </p> */}
+            <label className="desc">
+              Please record a short (1 minute ) video on your phone introducing
+              yourself and your art, and anything else you’d like to share.
+              Upload to a shared Google Drive folder (make sure it’s open /
+              accessible!) or a video hosting site (e.g YouTube, Vimeo), and
+              paste link below. <br />
+              English is not required - feel free to speak in another language
+              if more comfortable.
+            </label>
+            <input
+              type="text"
+              placeholder="Attached Link"
+              {...register("appVideo", {
+                required: true,
+                pattern:
+                  "(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?",
+              })}
+            />
+            <br></br>
+            {errors?.appVideo?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+            {errors?.appVideo?.type === "pattern" && (
+              <p className="customRed">Invalid Url</p>
+            )}
+          </div>
+
+          <div className="form-box">
+            <label className="required">
+              Link to a selection of your artwork <span>*</span>
+            </label>
+            {/* <p>Link to a selection of your artwork * </p> */}
+            <label className="desc">
+              Please submit 3-5 individual works using a Google Drive folder,
+              making sure folder is open/accessible. (IMPORTANT - double check
+              that our team will have access to view the folder - if the link is
+              password protected or not open you likely won’t get a reply.
+            </label>
+            <input
+              type="text"
+              placeholder="Attached Link"
+              {...register("artworkLink", {
+                required: true,
+                pattern:
+                  "(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?",
+              })}
+            />
+            <br></br>
+            {errors?.artworkLink?.type === "pattern" && (
+              <p className="customRed">Invalid Url</p>
+            )}
+            {errors?.artworkLink?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label className="required">
+              What is the story behind these pieces? Why do you think they
+              should be on multiart? <span>*</span>
+            </label>
+            {/* <p>
+            What is the story behind these pieces? Why do you think they should
+            be on multiart?
+          </p> */}
+            <input
+              type="text"
+              placeholder=" "
+              {...register("story", {
+                required: true,
+              })}
+            />
+            <br></br>
+            {errors?.story?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label className="required">
+              How did you hear about Multiart? <span>*</span>
+            </label>
+            {/* <p>
+            How did you hear about Multiart?
+          </p> */}
+            <input
+              type="text"
+              placeholder=" "
+              {...register("whereHear", {
+                required: true,
+              })}
+            />
+            <br></br>
+            {errors?.whereHear?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+          </div>
+          <div className="form-box">
+            <label className="">
+              Check here to confirm that none of your submitted works containing
+              any infringing, unauthorized, or unoriginal intellectual property{" "}
+              <span>*</span>
+            </label>
+            {/* <p>
+           Check here to confirm that none of your submitted works containing
+            any infringing, unauthorized, or unoriginal intellectual property
+          </p> */}
+            <div className="check">
+              <input
+                type="checkbox"
+                {...register("legal", {
+                  required: true,
+                })}
+              />
+              <br></br>
+              <label>Confirm</label>
+            </div>
+            <br></br>
+            {errors?.legal?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+          </div>
+          <div className="form-box">
+            <p className="required">
+              I acknowledge and consent to the multiart.io Terms of Services and
+              Privacy Policy <span>*</span>
+            </p>
+            {/* <p>
+          I acknowledge and consent to the multiart.io Terms of Services and
+            Privacy Policy
+          </p> */}
+            <div className="check">
+              <input
+                type="checkbox"
+                {...register("consent", {
+                  required: true,
+                })}
+              />
+              <label>I agree</label>
+            </div>
+            <br></br>
+            {errors?.consent?.type === "required" && (
+              <p className="customRed">This field is required</p>
+            )}
+          </div>
+          <div className="bottom">
+            <button type="submit">Confirm</button>
+            <a href="#" onClick={() => navigate(-1)}>
+              Cancel
+            </a>
+          </div>
+        </div>

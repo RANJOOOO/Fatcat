@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/chevron-down-small</title>
+    <defs>
+        <path d="M3.34383117,7.35783334 C3.80227273,6.88072222 4.54555336,6.88072222 5.00399492,7.35783334 L12,14.63819 L18.9960051,7.35783334 C19.4127701,6.92409596 20.0649394,6.88466529 20.5245052,7.23954133 L20.6561688,7.35783334 C21.1146104,7.83494447 21.1146104,8.60849444 20.6561688,9.08560557 L12.8300819,17.2304019 C12.3716403,17.7075131 11.6283597,17.7075131 11.1699181,17.2304019 L3.34383117,9.08560557 C2.88538961,8.60849444 2.88538961,7.83494447 3.34383117,7.35783334 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/chevron-down-small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="colour/black" mask="url(#mask-2)" fill="#000000">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

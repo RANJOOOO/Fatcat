@@ -1,0 +1,259 @@
+.spotlight-page {
+  background-color: var(--black);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+  .spotlight-page-content {
+    max-width: 680px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    .profile-box {
+      height: 62px;
+      width: 100%;
+      background-color: #d8d8d833;
+      padding: 8px;
+      button {
+        border-color: var(--white);
+      }
+
+      &.follow-box {
+        margin-top: 200px;
+      }
+    }
+    .artist-about-box {
+      margin-top: 75px;
+      margin-bottom: 33px;
+      height: 55px;
+      border-top: 1px solid var(--white);
+      border-bottom: 1px solid var(--white);
+      .social-links {
+        display: flex;
+        gap: 30px;
+      }
+    }
+    .artist-about {
+      h6 {
+        font-size: 25px;
+        font-style: italic;
+      }
+    }
+    .artwork-box {
+      margin-bottom: 100px;
+      img {
+        max-height: 496px;
+      }
+    }
+
+    .artwork-box-sm {
+      .thumbnail {
+        width: 322px;
+        height: 290px;
+      }
+    }
+
+    .q-box {
+      .artwork-box {
+        margin-top: 100px;
+      }
+      .details {
+        font-size: 21px;
+        line-height: 33px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 3;
+
+    .btn-prime {
+      height: 36px;
+      border: 1px solid var(--white); // Adjust border color as needed
+    }
+
+    // Default button width
+    .btn-prime {
+      width: 126px;
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+
+      .btn-prime {
+        width: 100%; // Full width for small screens
+        margin-bottom: 10px; // Add some margin between buttons for better spacing
+      }
+    }
+  }
+}
+
+.whitelist-right {
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3;
+
+  .btn-prime {
+    height: 36px;
+    border: 1px solid var(--white); // Adjust border color as needed
+  }
+
+  // Default button width
+  .btn-prime {
+    width: 126px;
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+
+    .btn-prime {
+      width: 100%; // Full width for small screens
+      margin-bottom: 10px; // Add some margin between buttons for better spacing
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .spotlight-page {
+    background-color: var(--black);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+    .spotlight-page-content {
+      max-width: 680px;
+      padding-top: 80px;
+      padding-bottom: 100px;
+      overflow: hidden;
+      .profile-box {
+        height: 62px;
+        width: 100%;
+        background-color: #d8d8d833;
+        padding: 8px;
+        button {
+          border-color: var(--white);
+        }
+
+        &.follow-box {
+          margin-top: 200px;
+        }
+      }
+      .artist-about-box {
+        margin-top: 75px;
+        margin-bottom: 33px;
+        height: 55px;
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
+        .social-links {
+          display: flex;
+          gap: 30px;
+        }
+      }
+      .artist-about {
+        h6 {
+          font-size: 25px;
+          font-style: italic;
+        }
+      }
+      .artwork-box {
+        margin-bottom: 100px;
+        img {
+          max-height: 496px;
+        }
+      }
+
+      .artwork-box-sm {
+        .thumbnail {
+          width: 322px;
+          height: 290px;
+        }
+      }
+
+      .q-box {
+        .artwork-box {
+          margin-top: 100px;
+        }
+        .details {
+          font-size: 21px;
+          line-height: 33px;
+        }
+      }
+    }
+    h4.medium-head {
+      font-size: 30px;
+      line-height: 46px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .spotlight-page {
+    background-color: var(--black);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+
+    .spotlight-page-content {
+      max-width: 680px;
+      padding-top: 80px;
+      padding-bottom: 100px;
+      overflow: hidden;
+
+      .profile-box {
+        height: 180px;
+        width: 100%;
+        background-color: #d8d8d833;
+        padding: 8px;
+        button {
+          border-color: var(--white);
+        }
+        .btn-prime {
+          width: 100%; // Full width for small screens
+          margin-bottom: 10px; // Add some margin between buttons for better spacing
+        }
+
+        &.follow-box {
+          margin-top: 200px;
+        }
+      }
+      .artist-about-box {
+        margin-top: 75px;
+        margin-bottom: 33px;
+        height: 55px;
+        border-top: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
+        .social-links {
+          display: flex;
+          gap: 30px;
+        }
+      }
+      .artist-about {
+        h6 {
+          font-size: 25px;
+          font-style: italic;
+        }
+      }
+      .artwork-box {
+        margin-bottom: 100px;
+        img {
+          max-height: 496px;
+        }
+      }
+
+      .artwork-box-sm {
+        .thumbnail {
+          width: 322px;
+          height: 290px;
+        }
+      }
+
+      .q-box {
+        .artwork-box {
+          margin-top: 100px;
+        }
+        .details {
+          font-size: 21px;
+          line-height: 33px;
+        }
+      }
+    }
+    h4.medium-head {
+      font-size: 30px;
+      line-height: 46px;
+    }
+  }
+}

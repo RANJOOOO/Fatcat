@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/collection-white</title>
+    <g id="icon/collection-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="1.3" fill="#000000" x="4.65" y="4.65" width="9.7" height="9.7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="1.3" fill="#000000" x="7.15" y="7.15" width="9.7" height="9.7"></rect>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="1.3" fill="#000000" x="9.65" y="9.65" width="9.7" height="9.7"></rect>
+    </g>
+</svg>

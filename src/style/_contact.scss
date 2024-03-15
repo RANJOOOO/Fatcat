@@ -1,0 +1,63 @@
+.contact {
+  padding: 110px 0 160px 0;
+  .contact-form {
+    max-width: 460px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    label {
+      color: var(--black);
+      letter-spacing: -0.71px;
+      margin-bottom: 15px;
+    }
+
+    input {
+      border-radius: 25px;
+      border: 1px solid var(--input-border);
+      padding: 11px 0 13px 20px;
+      margin-bottom: 25px;
+      &:focus {
+        border: 2px solid var(--black) !important;
+        outline: none;
+        box-shadow: none;
+      }
+      &:hover {
+        border: 1px solid var(--black);
+      }
+      &:active {
+        border: 2px solid var(--black);
+      }
+    }
+
+    .btn-contact {
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .contact {
+    padding: 90px 23px 130px 23px;
+    .news-heading {
+      font-size: 26px;
+      span {
+        padding: 2px 14px 2px 12px;
+        border-radius: 17.5px;
+      }
+    }
+    .contact-form {
+      max-width: 460px;
+      margin-top: 50px;
+      label {
+        font-size: 13.5px;
+      }
+      input {
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      button {
+        font-size: 18px;
+      }
+    }
+  }
+}

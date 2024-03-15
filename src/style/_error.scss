@@ -1,0 +1,28 @@
+.error {
+  @include flex-center;
+  flex-direction: column;
+  padding-bottom: 95px;
+  padding-top: 95px;
+  h1 {
+    padding-bottom: 47px;
+    border-bottom: 1px solid var(--lightest-grey);
+  }
+  p {
+    max-width: 406px;
+    margin: 35px 0 50px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .error {
+    h1 {
+      padding-bottom: 40px;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -4.5px;
+    }
+    p {
+      max-width: 406px;
+      margin: 35px 0 50px 0;
+    }
+  }
+}

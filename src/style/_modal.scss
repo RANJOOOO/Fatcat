@@ -1,0 +1,586 @@
+.sign-modal {
+  .modal-dialog {
+    max-width: unset;
+    @include flex-center;
+  }
+
+  .modal-content {
+    width: 722px;
+    border: none;
+    border-radius: 0;
+    .modal-header {
+      padding: 0;
+      height: 48px;
+      padding-right: 10px;
+      .modal-title {
+        width: 100%;
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+      button {
+        background: url("../assets/icon/close-small.svg");
+        background-repeat: no-repeat;
+        opacity: 1;
+        padding-top: 0;
+        position: absolute;
+        right: 10px;
+      }
+    }
+    .connect-wallet-btn {
+      @include flex-center;
+      padding: 29px;
+    }
+  }
+  .modal-body {
+    // Create Art component
+    .captcha-content {
+      padding-top: 70px;
+
+      p {
+        max-width: 400px;
+      }
+    }
+
+    // Single art page --> new art added
+    .newArt-done {
+      padding: 43px 0 50px 0;
+
+      img {
+        max-width: 240px;
+        width: 100%;
+        height: 171px;
+        margin: 30px 0;
+      }
+    }
+
+    .search-form {
+      max-width: 512px;
+      height: 41px;
+      margin: 0 auto;
+    }
+    .mb-modal-space {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 512px;
+      .search-form {
+        margin: 0;
+      }
+    }
+    .art-transfer {
+      padding-bottom: 70px;
+      .input-box {
+        max-width: 487px;
+        width: 100%;
+      }
+      img {
+        width: 106px;
+        height: 106px;
+        padding: 2px;
+        border: 1px solid var(--black);
+      }
+    }
+
+    .approve-listing-modal {
+      .listed-item {
+        border: 1px solid var(--lightest-grey);
+        max-width: 431px;
+        width: 100%;
+        max-height: 156px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        .left {
+          margin-right: 30px;
+          img {
+            width: 106px;
+            height: 106px;
+            padding: 3px;
+            border: 1px solid var(--black);
+          }
+        }
+      }
+    }
+
+    .create-collection-modal {
+      height: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+    }
+    .buy-now-modal {
+      padding: 30px 20px 80px 20px;
+      .listed-item {
+        border: 1px solid var(--lightest-grey);
+        padding: 20px;
+        .left {
+          img {
+            width: 76px;
+            height: 76px;
+            padding: 2px;
+            border: 2px solid var(--black);
+          }
+        }
+
+        &.auction-live {
+          background-color: black;
+          label,
+          p {
+            color: var(--white) !important;
+          }
+        }
+      }
+
+      .pricing {
+        height: 41px;
+        border: 1px dashed var(--medium-grey);
+        padding: 0 13px;
+        background-color: var(--lightest-grey);
+        input {
+          background-color: var(--lightest-grey);
+        }
+      }
+
+      .wallet {
+        border: 1px solid var(--black);
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.wallet-connect-modal {
+  .modal-body {
+    padding: 0;
+
+    .wallet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 165px;
+      height: 62px;
+      border: 1px solid var(--white);
+      border-radius: 31px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        border: 1px solid var(--black);
+      }
+      &:last-child {
+        // border: none;
+        width: fit-content;
+        margin-left: 100px;
+      }
+      img {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  .modal-footer {
+    padding-bottom: 22px;
+    padding-top: 42px;
+    padding-left: 81px;
+    padding-right: 81px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    .top-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .footer-head {
+        color: var(--light-grey);
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .left-content {
+        max-width: 260px;
+      }
+      .right-content {
+        .get-metamask {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+          }
+          a {
+            color: var(--link-blue);
+            font-weight: 700;
+            text-decoration: underline;
+          }
+        }
+        .r-btm {
+          margin-top: 30px;
+        }
+      }
+    }
+    .btm-footer {
+      text-align: center;
+      margin-top: 45px;
+      p {
+        color: var(--grey);
+        a {
+          color: var(--grey);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.wallet-signIn-modal {
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 47px;
+    p {
+      margin: 23px 0;
+
+      span {
+        font-weight: 700;
+      }
+      .optional {
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.5;
+        color: var(--medium-grey);
+        margin-left: 5px;
+      }
+    }
+    .email-detail {
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+    button {
+      width: 172px;
+      height: 36px;
+    }
+    .sign-your-wallet {
+      background-color: var(--lightest-grey) !important;
+      border-color: var(--lightest-grey);
+      color: var(--medium-grey);
+    }
+    .add-email {
+      width: 327px;
+      height: 41px;
+      border: 2px solid var(--black);
+      border-radius: 25px;
+      padding: 0 20px;
+      &::placeholder {
+        color: var(--medium-grey);
+        opacity: 1;
+      }
+    }
+    .mail-btns {
+      margin-top: 50px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      button {
+        // border-radius: 18px;
+        // background: var(--black);
+        // color: var(--white);
+        // border: none;
+        // &:not(:last-child) {
+        //   border: 1px solid var(--black);
+        //   background: var(--white);
+        //   color: var(--black);
+        //   margin-right: 20px;
+        // }
+      }
+    }
+  }
+  .modal-footer {
+    padding: 35px;
+    flex-direction: column;
+    @include flex-center;
+
+    p {
+      color: var(--black);
+      a {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+      &:first-child {
+        color: var(--light-grey);
+        font-weight: 600;
+      }
+    }
+
+    .trouble {
+      margin-top: 44px;
+      a {
+        color: var(--medium-grey);
+        text-decoration: underline;
+      }
+    }
+
+    .sign-in-failed {
+      p {
+        text-align: center;
+        color: var(--black);
+        font-weight: 400;
+        a {
+          color: var(--black);
+          text-decoration: underline;
+        }
+        span {
+          font-weight: 600;
+        }
+      }
+      .trouble {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.terms-modal {
+  .modal-body {
+    padding-top: 63px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-bottom: 25px;
+    }
+
+    p {
+      text-align: center;
+      &.terms-detail {
+        padding-top: 65px;
+        padding-bottom: 45px;
+        color: var(--medium-grey);
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      button {
+        width: 126px;
+        height: 36px;
+      }
+    }
+  }
+}
+
+.fullScreen-modal {
+  .modal-dialog {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: unset !important;
+    margin: 0;
+    .modal-content {
+      height: 100%;
+      .full-screen-art {
+        position: relative;
+        background-color: var(--black);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .art {
+          width: 40%;
+          height: auto;
+        }
+      }
+      .screen-alert {
+        position: relative;
+        top: -20px;
+        left: 5%;
+        // transform: translateX(-50%);
+        img {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wallet-connect-modal {
+    .modal-body {
+      padding: 0;
+
+      .wallet {
+        width: fit-content;
+        border: none;
+        flex-direction: column;
+        padding: 46px 0;
+        &:last-child {
+          border: none;
+          // width: fit-content;
+          margin-left: 20px;
+        }
+        img {
+          margin-right: 0px;
+          width: 70px;
+          height: 70px;
+          padding: 10px;
+          -webkit-box-shadow: 0px 0px 58px 0px rgba(76, 76, 76, 0.1);
+          -moz-box-shadow: 0px 0px 58px 0px rgba(76, 76, 76, 0.1);
+          box-shadow: 0px 0px 58px 0px rgba(76, 76, 76, 0.1);
+          background-color: var(--white);
+          border-radius: 18px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .modal-footer {
+      padding-bottom: 34px;
+      padding-top: 44px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      .top-footer {
+        flex-direction: column;
+        align-items: center;
+        .footer-head {
+          text-align: center;
+        }
+        .left-content {
+          p {
+            text-align: center;
+          }
+        }
+        .right-content {
+          .footer-head {
+            display: none;
+          }
+          div {
+            p {
+              display: none;
+            }
+          }
+          .r-btm {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+      .btm-footer {
+        text-align: center;
+        margin-top: 45px;
+        p {
+          color: var(--grey);
+          a {
+            color: var(--grey);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .wallet-signIn-modal .modal-body {
+    .email-detail {
+      br {
+        display: none;
+      }
+    }
+    .mail-btns {
+      button {
+        width: 130px;
+      }
+    }
+  }
+
+  .sign-modal {
+    .modal-content {
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      min-height: 500px;
+    }
+    .modal-body {
+      .approve-listing-modal {
+        padding-left: 10px;
+        padding-right: 10px;
+        .listed-item {
+          padding: 25px 10px;
+        }
+      }
+    }
+  }
+
+  .sign-modal,
+  .wallet-connect-modal,
+  .wallet-signIn-modal,
+  .terms-modal {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: end;
+  }
+  .wallet-connect-modal .modal-dialog,
+  .sign-modal .modal-dialog,
+  .wallet-signIn-modal .modal-dialog,
+  .terms-modal .modal-dialog {
+    align-items: end !important;
+    margin: 0 !important;
+  }
+
+  .text-mb-start {
+    text-align: start;
+    padding-left: 19px;
+  }
+
+  .addWhiteListModal {
+    display: flex;
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 20px !important;
+
+      .mb-modal-space {
+        width: 100%;
+      }
+      .btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 512px;
+        margin: auto;
+        margin-bottom: 0 !important;
+        button {
+          min-width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .fullScreen-modal .modal-dialog .modal-content .full-screen-art .art {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.w-431 {
+  max-width: 432px;
+  width: 100%;
+}

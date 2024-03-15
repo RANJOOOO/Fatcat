@@ -1,0 +1,24 @@
+.collection-option {
+  //   position: absolute;
+  //   bottom: 30px;
+  //   right: 100px;
+  //   transform: translateX(50%);
+  width: 238px;
+  height: fit-content;
+  border: 1px solid var(--black);
+  z-index: 4;
+  background: var(--white);
+
+  .collection-item {
+    height: 64px;
+    @include d-center;
+    padding-left: 19px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--off-white);
+    }
+    // &:last-child {
+    //   border-bottom: 1px solid var(--black);
+    // }
+  }
+}

@@ -1,0 +1,30 @@
+// Flex mixins
+
+@mixin flex-center($justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin d-center($align: center) {
+  display: flex;
+  align-items: $align;
+}
+
+@mixin d-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin slick-arrow-size($top: 245px) {
+  width: 50px;
+  height: 50px;
+  top: $top;
+}
+
+// Transitions
+
+// @mixin trans3 {
+//   transition: all 0.3s ease;
+// }

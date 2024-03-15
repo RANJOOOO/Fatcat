@@ -1,0 +1,132 @@
+.inputtype1 {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.63px;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  &::placeholder {
+    color: var(--light-grey);
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.63px;
+  }
+}
+
+.text-box {
+  textarea {
+    &::placeholder {
+      color: var(--light-grey);
+      opacity: 1;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.63px;
+    }
+  }
+  &:focus-within {
+    outline: 2px solid var(--black);
+  }
+  &:focus {
+    outline: 2px solid var(--black);
+  }
+  &:active {
+    outline: 2px solid var(--black);
+  }
+  &:hover {
+    outline: 1px solid var(--black);
+  }
+}
+// .input-2 {
+//   color: var(--black);
+//   font-weight: 500;
+//   font-size: 14px;
+//   letter-spacing: -0.63px;
+//   padding-left: 15px;
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid var(--input-border);
+//   &::placeholder {
+//     color: var(--light-grey);
+//     opacity: 1;
+//     font-size: 14px;
+//     font-weight: 500;
+//     letter-spacing: -0.63px;
+//   }
+// }
+.input-box {
+  outline: 1px solid var(--input-border);
+  height: 40px;
+  overflow: hidden;
+  padding: 0px 0px;
+  input {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    outline: 1px solid var(--black);
+  }
+  &:focus-within {
+    outline: 2px solid var(--black);
+  }
+
+  &.disabled {
+    background-color: var(--lightest-grey);
+    outline: 1px dashed var(--black);
+    input:disabled {
+      background-color: var(--lightest-grey);
+      color: var(--medium-grey);
+    }
+  }
+}
+
+.custom-inputBox {
+  .input-box {
+    outline: 1px solid var(--input-border);
+    // outline: 1px solid var(--black);
+    height: 40px;
+    overflow: hidden;
+    padding: 0px 0px;
+    border-radius: 30px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 26px;
+    }
+    &:hover {
+      outline: 1px solid var(--black);
+    }
+    &:focus-within {
+      outline: 2px solid var(--black);
+      border: none;
+      // border: 1px solid var(--black);
+    }
+
+    &.disabled {
+      background-color: var(--lightest-grey);
+      outline: 1px solid var(--black);
+
+      input:disabled {
+        background-color: var(--lightest-grey);
+        color: var(--medium-grey);
+      }
+    }
+
+    .cls-btn {
+      position: absolute;
+      top: 7px;
+      right: 11px;
+    }
+  }
+  &.disabled {
+    background-color: var(--lightest-grey);
+    border: 1px dashed var(--black);
+    input:disabled {
+      background-color: var(--lightest-grey);
+      color: var(--medium-grey);
+    }
+  }
+}

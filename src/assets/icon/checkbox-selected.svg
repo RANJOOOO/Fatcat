@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/checkbox-selected</title>
+    <g id="icon/checkbox-selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#000000" x="2" y="2" width="20" height="20"></rect>
+        <path d="M17.7440777,6.41074435 C18.0695146,6.08530744 18.5971521,6.08530744 18.922589,6.41074435 C19.2480259,6.73618126 19.2480259,7.26381874 18.922589,7.58925565 L9.75592232,16.7559223 C9.43048541,17.0813592 8.90284793,17.0813592 8.57741102,16.7559223 L4.41074435,12.5892557 C4.08530744,12.2638187 4.08530744,11.7361813 4.41074435,11.4107443 C4.73618126,11.0853074 5.26381874,11.0853074 5.58925565,11.4107443 L9.166,14.988 L17.7440777,6.41074435 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

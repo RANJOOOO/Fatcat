@@ -1,0 +1,76 @@
+section.trending-artist {
+  padding-top: 70px;
+  padding-bottom: 146px;
+  .trending-artist-content {
+    padding-top: 70px;
+    @include flex-center;
+    .t-artist-card {
+      margin-right: 80px;
+      &:last-child {
+        margin: 0;
+      }
+      .t-artist-card-head {
+        border-radius: 100%;
+        border: 2px solid var(--black);
+        padding: 6px;
+      }
+      p {
+        text-align: center;
+        margin-top: 13px;
+        @include d-col-center;
+        span {
+          color: var(--white);
+          font-size: 9px;
+          line-height: 10px;
+          letter-spacing: 0.14px;
+          background: #95c128;
+          text-transform: uppercase;
+          width: 43px;
+          height: 19px;
+          border-radius: 4.72px;
+          margin-top: 10px;
+          @include flex-center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.trending-artist .trending-artist-content .t-artist-card {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section.trending-artist {
+    .trending-artist-content {
+      .t-artist-card {
+        margin-right: 0px;
+        margin: auto;
+        &:last-child {
+          // display: none; 
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.trending-artist {
+    padding-bottom: 30px;
+    padding-top: 161px;
+    .trending-artist-content {
+      flex-direction: column;
+      row-gap: 60px;
+      .t-artist-card {
+        margin-right: 0px;
+        margin: auto;
+        &:last-child {
+          // margin: auto;
+          // display: none;
+        }
+      }
+    }
+  }
+}

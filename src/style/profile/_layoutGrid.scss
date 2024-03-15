@@ -1,0 +1,338 @@
+.my-filter {
+  // background-color: red;
+  height: 300px;
+  margin-right: 50px;
+  margin-top: 33px;
+}
+.grid-display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 47px;
+  row-gap: 53px;
+  padding-top: 33px;
+  place-items: center;
+  &.active {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: end;
+  }
+  .collection-grid-card {
+    width: 352px;
+    border: 1px solid var(--black);
+
+    .card-head {
+      @include d-center;
+      padding: 21px;
+      .user-img {
+        width: 44px;
+        height: 44px;
+        padding: 2px;
+        border-radius: 100%;
+        border: 1px solid var(--black);
+        margin-right: 8px;
+      }
+      .user-name {
+        p {
+          font-weight: 600;
+          // overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 200px;
+        }
+        label {
+          font-family: "Inter";
+          font-weight: 700;
+          color: var(--medium-grey);
+          letter-spacing: -0.35px;
+          text-transform: unset;
+          font-size: 15px;
+          &:hover {
+            color: var(--black);
+          }
+          &:hover .artist-popup {
+            display: block;
+          }
+          @include d-center;
+          img {
+            margin-left: 3px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+        position: relative;
+      }
+    }
+    .card-body {
+      position: relative;
+      .art-img {
+        width: 100%;
+        height: 353px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .sgb {
+        min-width: 100px;
+        padding: 0 13px;
+        height: 38px;
+        background-color: var(--black);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 7px;
+        @include flex-center;
+        position: absolute;
+        left: 21px;
+        bottom: 16px;
+      }
+      .chain-logo {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        .chain-logo {
+          opacity: 1;
+        }
+      }
+    }
+    .card-footer {
+      padding: 24px 21px;
+      // @include flex-center(space-between);
+
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .divider {
+        width: 1px;
+        // height: 100%;
+        // border: 1px solid red;
+        margin: 0 !important;
+        background: var(--lightest-grey);
+      }
+      label {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .owner {
+        max-width: 135px;
+        // width: 100%;
+        label {
+          @include d-center(center);
+          margin-left: -5px;
+        }
+        &:hover .artist-popup {
+          display: block;
+        }
+      }
+      .offer {
+        // padding-left: 36px;
+        // border-left: 1px solid var(--lightest-grey);
+        img {
+          width: 16px;
+          height: 16.5px;
+          margin-right: 5.75px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .grid-display {
+    .collection-grid-card {
+      width: 320px;
+      .card-body {
+        .art-img {
+          height: 321px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .grid-display {
+    .collection-grid-card {
+      width: 290px;
+      .card-body {
+        .art-img {
+          height: 290px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1550px) {
+  .grid-display {
+    column-gap: 29px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .my-filter {
+    width: 22% !important;
+  }
+  .grid-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .collection-grid-card {
+      width: 280px;
+      .card-footer {
+        .owner {
+          max-width: 140px;
+        }
+      }
+    }
+    &.active {
+      .collection-grid-card {
+        width: 280px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .my-filter {
+    width: 22% !important;
+    margin-right: 20px;
+  }
+  .grid-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    place-items: center;
+    .collection-grid-card {
+      width: 320px;
+      .card-body {
+        .art-img {
+          height: 290px;
+        }
+      }
+    }
+    &.active {
+      place-items: end;
+      .collection-grid-card {
+        width: 280px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .my-filter {
+    width: 25% !important;
+  }
+
+  .grid-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    .collection-grid-card {
+      width: 100%;
+      .card-body {
+        .art-img {
+          height: 320px;
+        }
+      }
+    }
+    &.active {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: end;
+      gap: 20px;
+      .collection-grid-card {
+        width: 350px;
+        .card-body {
+          .art-img {
+            height: 350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .grid-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: inherit;
+
+    .collection-grid-card {
+      width: 100%;
+      .card-body {
+        .art-img {
+          height: 280px;
+        }
+      }
+    }
+    &.active {
+      .collection-grid-card {
+        width: 100%;
+        .card-body {
+          .art-img {
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .grid-display {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    .collection-grid-card {
+      max-width: 352px;
+      .card-body .art-img {
+        max-height: 352px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-display {
+    column-gap: unset;
+    row-gap: 20px;
+    @include flex-center;
+    flex-direction: column;
+    .collection-grid-card {
+      max-width: 352px;
+      width: 100%;
+      .card-body {
+        .art-img {
+          height: 340px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-display.active {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .grid-display {
+    .collection-grid-card {
+      width: 100%;
+      max-width: 100%;
+      .card-body {
+        .art-img {
+          height: 300px;
+        }
+      }
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 20px;
+        .offer {
+          padding-left: 19px;
+          border-left: 1px solid var(--lightest-grey);
+        }
+      }
+    }
+  }
+}

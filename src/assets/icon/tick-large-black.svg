@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/tick-large-black</title>
+    <defs>
+        <path d="M20.0698282,4.37060125 C20.4844864,3.90532243 21.187339,3.87389051 21.6396934,4.30039609 C22.0920478,4.72690168 22.1226066,5.44983578 21.7079484,5.9151146 L9.48572699,19.6293996 C9.04535305,20.1235335 8.28798072,20.1235335 7.84760678,19.6293996 L2.29205159,13.3956337 C1.87739339,12.9303549 1.9079522,12.2074208 2.3603066,11.7809152 C2.812661,11.3544096 3.51551359,11.3858415 3.9301718,11.8511203 L8.66666688,17.1645716 L20.0698282,4.37060125 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/tick-large-black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="colour/black" mask="url(#mask-2)" fill="#000000">
+            <g transform="translate(-0.000000, 0.000000)" id="Rectangle">
+                <rect x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

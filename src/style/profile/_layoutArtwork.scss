@@ -1,0 +1,159 @@
+// .artwork-layout {
+//   padding-top: 33px;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   column-gap: 68px;
+//   row-gap: 68px;
+//   .artwork-card {
+//     width: 350px;
+//     height: 353px;
+//     // border: 1px solid var(--grey-varient-1);
+//     position: relative;
+//     overflow: hidden;
+
+//     .sgb {
+//       position: absolute;
+//       top: 16px;
+//       left: 16px;
+//       cursor: pointer;
+//     }
+//     .art-price {
+//       width: 90px;
+//       height: 38px;
+//       background: var(--black);
+//       border: 1px solid rgb(255, 255, 255, 0.4);
+//       border-radius: 7px;
+//       @include flex-center;
+//       position: absolute;
+//       left: 17px;
+//       bottom: 17px;
+//       img {
+//         margin-right: 3px;
+//         width: 20px;
+//         height: 20px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1440px) {
+//   .artwork-layout {
+//     grid-template-columns: repeat(3, 1fr);
+//     column-gap: 38px;
+//     row-gap: 38px;
+//   }
+// }
+
+// @media screen and (max-width: 1366px) {
+//   .artwork-layout {
+//     column-gap: 30px;
+//     row-gap: 30px;
+//     .artwork-card {
+//       width: 330px;
+//       height: 333px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 600px) {
+//   .artwork-layout {
+//     @include d-center;
+//     flex-direction: column;
+//     column-gap: 0px;
+//     row-gap: 38px;
+//   }
+// }
+.like-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.layout-artwork {
+  .collection-grid-card {
+    border: none;
+    .card-body {
+      .art-img {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .layout-artwork .collection-grid-card {
+    width: 331px;
+    .card-body {
+      .art-img {
+        height: 331px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1700px) {
+  .layout-artwork.collection-grid-card {
+    width: 320px;
+    .card-body {
+      .art-img {
+        height: 320px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1650px) {
+  .layout-artwork .collection-grid-card {
+    width: 299px;
+    .card-body {
+      .art-img {
+        height: 299px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1550px) {
+  .layout-artwork.collection-grid-card {
+    width: 290px;
+    .card-body {
+      .art-img {
+        height: 295px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .layout-artwork .collection-grid-card {
+    width: 280px;
+    .card-body {
+      .art-img {
+        height: 285px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .layout-artwork.collection-grid-card {
+    width: 352px;
+    .card-body {
+      .art-img {
+        height: 352px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .layout-artwork.collection-grid-card {
+    width: 320px;
+    .card-body {
+      .art-img {
+        height: 322px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .layout-artwork.collection-grid-card {
+    width: 300px;
+    .card-body {
+      .art-img {
+        height: 300px;
+      }
+    }
+  }
+}

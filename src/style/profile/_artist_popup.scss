@@ -1,0 +1,84 @@
+.artist-popup {
+  position: absolute;
+  left: -110px;
+  top: -190px;
+  z-index: 3;
+  background-color: var(--white);
+  width: 331px;
+  height: 216px;
+  border: 1px solid var(--black);
+  padding: 21px 15px 15px 15px;
+  display: none;
+  .pop-head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--lightest-grey) !important;
+    .user-img {
+      width: 44px;
+      height: 44px;
+      padding: 2px !important;
+      border: 1px solid var(--black);
+      border-radius: 100%;
+      margin-right: 8px !important;
+    }
+    p {
+      font-weight: 600;
+      color: var(--black) !important;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      img {
+        margin-left: 5px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .popup-body {
+    display: flex;
+    label {
+      margin-top: 0 !important;
+    }
+    label.medium {
+      font-weight: 400 !important;
+      margin-bottom: 6px !important;
+    }
+    .created {
+      padding-top: 18px;
+      display: flex;
+      flex-direction: column;
+      &:first-child {
+        margin-right: 90px;
+      }
+    }
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+.show-artist-popup {
+  position: relative;
+  &:hover {
+    .artist-popup {
+      display: block;
+      animation: fadeIn 1s 1s forwards;
+    }
+  }
+}
+@keyframes fadeIn {
+  to {
+    display: block;
+  }
+}
+
+// .show-artist-popup :hover + .artist-popup {
+//   display: block !important;
+// }
+
+@media screen and (max-width: 600px) {
+  .show-artist-popup :hover + .artist-popup {
+    display: none !important;
+  }
+}

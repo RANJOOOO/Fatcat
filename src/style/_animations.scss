@@ -1,0 +1,48 @@
+.rotate-360 {
+  animation: rotateAnim 1s linear 0s infinite normal forwards;
+}
+@keyframes rotateAnim {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.trans-7 {
+  transition: all 0.7s linear;
+}
+
+.translateX-1000 {
+  transform: translateX(-1000px);
+}
+
+.translateY-1000 {
+  transform: translateY(1000px);
+}
+
+.translateX-0 {
+  transform: translateX(0);
+}
+
+.artwork-hover {
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(110%);
+  }
+}
+
+.row-hover {
+  &:hover {
+    background: var(--off-white);
+  }
+}
+
+.fade {
+  transition: unset !important;
+}
+.offcanvas {
+  transition: unset !important;
+}

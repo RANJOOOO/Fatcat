@@ -1,0 +1,131 @@
+.collected-arts {
+  .have-arts {
+    padding-bottom: 295px;
+    position: relative;
+  }
+}
+.collection-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 74px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--white);
+
+  height: 60px;
+  border-bottom: 1px solid var(--lightest-grey);
+  .left {
+    @include d-center;
+    label {
+      font-weight: 400;
+    }
+  }
+  .right {
+    @include d-center;
+    .collection-grid {
+      @include flex-center(space-between);
+      width: 144px;
+      margin-right: 59px;
+      img {
+        cursor: pointer;
+        opacity: 0.25;
+      }
+      .divider {
+        height: 17px;
+        width: 1px;
+        background: var(--lightest-grey);
+      }
+    }
+    .recent-collection {
+      img {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sub-menu-offcanvas {
+  height: fit-content;
+  max-height: 0 !important;
+  transform: translateY(10000px);
+
+  &.show {
+    transform: translateY(0px);
+  }
+}
+
+// .more-menu-sm {
+//   .share {
+//     display: flex;
+//     flex-direction: column;
+//     label {
+//       @include flex-center(space-between);
+//     }
+//   }
+// }
+.price-more-menu {
+  .share {
+    display: flex;
+    flex-direction: column;
+    label {
+      @include flex-center(space-between);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .collection-filter {
+    top: 63px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collected-arts .have-arts .collection-filter .right .collection-grid {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collection-filter {
+    top: 62px !important;
+    height: 74px;
+    .left {
+      .show-filter {
+        span {
+          width: 44px;
+          height: 44px;
+          display: block;
+          @include flex-center;
+          border: 1px solid var(--lightest-grey);
+          border-radius: 8px;
+        }
+      }
+    }
+    .right {
+      span {
+        width: 44px;
+        height: 44px;
+        display: block;
+        @include flex-center;
+        border: 1px solid var(--lightest-grey);
+        border-radius: 8px;
+        img {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+  .collected-arts {
+    .have-arts {
+      padding-bottom: 295px;
+      position: relative;
+    }
+  }
+}
+
+.op-100 {
+  opacity: 1;
+}

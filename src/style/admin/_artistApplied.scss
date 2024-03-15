@@ -1,0 +1,84 @@
+// .appliedForm {
+//   td {
+//     border: 1px solid #ccc;
+//     padding: 10px;
+//   }
+//   th {
+//     border: 1px solid #ccc;
+//     padding: 10px;
+//   }
+// }
+
+
+.appliedFormWrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px; /* Adjust the max-width as needed */
+  overflow-x: auto;
+  max-height: 400px; /* Set a fixed height for the scrollable area */
+  border: 1px solid #ccc;
+  /* Styling for WebKit browsers (Chrome, Safari) */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f5f5f5;
+}
+
+/* Track styles */
+.appliedFormWrapper::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle styles */
+.appliedFormWrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.appliedFormWrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Track styles when the handle is grabbed */
+.appliedFormWrapper::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+
+.appliedForm {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appliedForm th,
+.appliedForm td {
+  white-space: nowrap;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 1080px) {
+  .appliedForm thead {
+    display: none;
+  }
+
+  .appliedForm tbody {
+    display: block;
+    width: auto;
+  }
+
+  .appliedForm tr {
+    margin-bottom: 1rem;
+    display: block;
+    border: 1px solid #ddd;
+  }
+
+  .appliedForm td {
+    display: block;
+    text-align: left;
+  }
+
+  .appliedForm td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}

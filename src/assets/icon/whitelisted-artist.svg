@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/whitelisted-artist</title>
+    <g id="icon/whitelisted-artist" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Star" fill="#1FA6FF" points="11.762513 20.5607679 4.22140465 22.2857143 4.22140465 15.250568 5.32907052e-15 8.93697442 7.10185173 6.65848398 11.6931525 0 16.4231743 6.65848398 24 8.93697442 19.3036214 15.250568 19.3036214 22.2857143"></polygon>
+        <polyline id="Path-2" stroke="#FFFFFF" stroke-width="1.68" stroke-linecap="round" stroke-linejoin="round" points="8 12.1492338 10.6635976 15 15 10"></polyline>
+    </g>
+</svg>

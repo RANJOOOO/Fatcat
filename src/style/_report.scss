@@ -1,0 +1,25 @@
+.report-issue {
+  .report-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 490px;
+    width: 100%;
+    margin-top: 70px;
+    margin: 0 auto;
+    h4 {
+      font-size: 40px;
+    }
+
+    p {
+      margin: 36px 0 60px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .report-issue {
+    .report-content {
+      padding: 70px 23px;
+    }
+  }
+}

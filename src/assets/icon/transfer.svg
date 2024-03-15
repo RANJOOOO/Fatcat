@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/transfer</title>
+    <defs>
+        <path d="M22.9936406,12.0248856 C22.9897849,12.2537485 22.9142508,12.474646 22.758019,12.6529679 C22.6698264,12.7577304 22.5601677,12.8453489 22.4300358,12.9063447 L22.3301813,12.9464292 L3.57369782,21.9024178 C2.76269981,22.2896312 1.89228615,21.4937386 2.20555923,20.6514132 L5.4221456,11.9998531 L2.20555923,3.3485868 C1.89228615,2.50626145 2.76269981,1.71036877 3.57369782,2.09758222 L22.3437117,11.0582513 C22.5130608,11.1182416 22.652618,11.2209021 22.7584625,11.3489217 C22.9147429,11.5267954 22.989799,11.7469745 22.9940963,11.9678881 L22.9936406,12.0248856 Z M17.5788357,13 L7.18483573,13 L4.93983573,19.034 L17.5788357,13 Z M4.93983573,4.966 L7.18483573,11 L17.5788357,11 L4.93983573,4.966 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/transfer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="colour/black" mask="url(#mask-2)" fill="#000000">
+            <g transform="translate(0.000000, 0.000000)" id="Rectangle">
+                <rect x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

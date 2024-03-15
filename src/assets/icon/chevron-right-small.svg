@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/chevron-right-small</title>
+    <g id="icon/chevron-right-small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.376577,3.376577 C7.87867966,2.87447433 8.69274891,2.87447433 9.19485158,3.376577 L16.9091373,11.0908627 C17.41124,11.5929654 17.41124,12.4070346 16.9091373,12.9091373 L9.19485158,20.623423 C8.69274891,21.1255257 7.87867966,21.1255257 7.376577,20.623423 C6.87447433,20.1213203 6.87447433,19.3072511 7.376577,18.8051484 L14.1807143,12 L7.376577,5.19485158 C6.91309762,4.7313722 6.87744536,4.00207512 7.26962022,3.49770072 L7.376577,3.376577 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

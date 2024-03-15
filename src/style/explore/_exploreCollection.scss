@@ -1,0 +1,160 @@
+.explore-collections {
+  padding-top: 80px;
+  .header {
+    @include flex-center(space-between);
+    .left {
+      width: 30%;
+      .artists-name {
+        label {
+          cursor: pointer;
+          &:nth-child(2) {
+            margin-left: 14px;
+            margin-right: 9px;
+          }
+          &:not(:first-child) {
+            background-color: var(--off-white);
+            border-radius: 6px;
+            padding: 5px 14px;
+          }
+        }
+      }
+      h4 {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: -1.78px;
+        text-transform: capitalize;
+        // margin-top: 17px;
+      }
+
+      .collection-name {
+        .collection-thumbnail {
+          width: 67px;
+          height: 67px;
+          border: 1.12px solid var(--black);
+          border-radius: 100%;
+          padding: 2px;
+          img {
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      // .pl35 {
+      //   padding-left: 35px;
+      // }
+
+      // .pr35 {
+      //   padding-right: 35px;
+      // }
+      .art-creation {
+        justify-content: flex-end;
+        .divider {
+          background-color: var(--medium-grey);
+          width: 3px;
+          height: 3px;
+          border-radius: 100%;
+          margin: 0 10px;
+        }
+      }
+      .collection-summary {
+        margin-top: 47px;
+        display: flex;
+        justify-content: flex-end;
+        .t-volume {
+          display: flex;
+          flex-direction: column;
+          p {
+            margin-bottom: 7px;
+          }
+          // &:not(:last-child) {
+          //   border-right: 1px solid var(--lightest-grey);
+          // }
+        }
+
+        .divider {
+          // width: 1px;
+          height: 45px;
+          border-left: 1px solid var(--lightest-grey);
+          // background-color: var(--lightest-grey);
+          margin: 0 35px;
+        }
+      }
+    }
+  }
+  .explore-collections-content {
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .explore-collections {
+    padding-top: 80px;
+    .header {
+      align-items: flex-start;
+      flex-direction: column;
+      .right {
+        margin-top: 20px;
+        .art-creation {
+          justify-content: flex-start;
+        }
+        .collection-summary {
+          margin-top: 10px;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .explore-collections {
+    padding-top: 50px;
+    .header {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .left {
+        .artists-name {
+          label:not(:first-child) {
+            background-color: var(--off-white);
+            border-radius: 6px;
+            padding: 5px 14px;
+          }
+          label:nth-child(2) {
+            margin: 10px 0;
+          }
+        }
+        h4 {
+          font-size: 24px;
+        }
+      }
+
+      .right {
+        margin-top: 20px;
+        width: 100%;
+
+        .collection-summary {
+          // justify-content: space-between;
+          overflow: auto;
+
+          .t-volume {
+            // align-items: flex-start;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            min-width: 90px;
+            p {
+              margin-bottom: 7px;
+            }
+            // &:not(:last-child) {
+            //   border-right: none;
+            // }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+.offer-modal {
+  .modal-dialog {
+    // max-width: unset !important;
+  }
+
+  .modal-content {
+    width: 722px;
+    border-radius: 0;
+    min-height: 522px;
+    border: none;
+    .modal-header {
+      padding-top: 0;
+      padding-bottom: 0;
+      .modal-title {
+        @include flex-center;
+        width: 100%;
+        height: 48px;
+      }
+      .btn-close {
+        background-image: url("../../assets/icon/close.svg");
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+      }
+    }
+    .modal-body {
+      padding: 40px 40px;
+
+      // Offer Accept Alert
+      .accept-alert {
+        .offer-modal-top {
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          .top-content {
+            margin-top: 26px;
+            .collections {
+              .collection-img {
+                width: 76px;
+                height: 76px;
+                padding: 5px;
+                border: 1px solid var(--black);
+              }
+            }
+          }
+        }
+
+        .offer-fee {
+          margin-top: 30px;
+          .fee {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            label {
+              margin-top: 11px;
+
+              @include d-center;
+              img {
+                opacity: 0.4;
+              }
+              .divider {
+                height: 1px;
+                max-width: 464px;
+                width: 100%;
+                background-color: var(--lightest-grey);
+                margin-left: 10px;
+              }
+              .divider2 {
+                max-width: 445px;
+                height: 1px;
+                width: 100%;
+                background-color: var(--lightest-grey);
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+        .offer-modal-bottom {
+          margin-top: 28px;
+          @include flex-center;
+          flex-direction: column;
+
+          .value-wrapper {
+            @include d-center;
+            margin-top: 23px;
+            label {
+              @include d-center;
+              font-size: 20px;
+              margin: 0 5px;
+            }
+          }
+          .accept-offer {
+            margin-top: 29px;
+          }
+        }
+      }
+
+      // approve
+      .offer-approve-alert {
+        .approve-offer-details {
+          padding-top: 20px;
+          padding-bottom: 34px;
+          line-height: 23px;
+        }
+        .approve-wallets {
+          @include flex-center;
+          padding-top: 48px;
+          padding-bottom: 25px;
+          img {
+            cursor: pointer;
+            &:not(:last-child) {
+              margin-right: 30px;
+            }
+          }
+        }
+        .loader-btn {
+          margin-top: 52px !important;
+          img {
+            animation: rotateAnim 1s linear 0s infinite normal forwards;
+          }
+          @keyframes rotateAnim {
+            0% {
+              transform: rotate(0);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+
+      //offer-processing-alert
+
+      .offer-processing-alert {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      // offer-confirmed-alert
+      .offer-confirmed {
+        p {
+          padding-top: 10px;
+        }
+        .artwork-img {
+          width: 106px;
+          height: 106px;
+          padding: 4px;
+          border: 1px solid var(--black);
+          margin: auto;
+          margin-top: 27px;
+          margin-bottom: 55px;
+        }
+        .wallet-address {
+          width: 108px;
+          height: 29px;
+          border: 2px solid var(--link-blue);
+          border-radius: 25px;
+          @include flex-center;
+          padding: 0;
+          margin: auto;
+          margin-top: 13px;
+        }
+        button {
+          margin: auto;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer-modal {
+    --bs-modal-margin: 0px;
+    .modal-dialog {
+      margin: 0;
+      display: flex;
+      align-items: flex-end;
+      max-width: unset !important;
+    }
+    .modal-content {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      .modal-body {
+        padding: 30px 15px;
+      }
+    }
+  }
+}

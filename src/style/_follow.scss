@@ -1,0 +1,123 @@
+.follow {
+  .follow-content {
+    @include flex-center(space-between);
+    padding: 145px 35px 83px 141px;
+    .left {
+      h1 {
+        text-transform: uppercase;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+    .center {
+      p {
+        &:first-child {
+          font-weight: 600;
+          font-style: italic;
+          letter-spacing: -0.8px;
+          text-align: left;
+          text-transform: uppercase;
+
+          img {
+            margin-right: 20px;
+          }
+        }
+        &:not(:first-child) {
+          margin-top: 26px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: flex-end;
+      img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        // display: none;
+      }
+    }
+
+    .fixed-star {
+      position: fixed;
+      right: 35px;
+      bottom: 35px;
+      transition: all 0.5s linear;
+    }
+  }
+  .social-follow {
+    @include flex-center(space-between);
+    padding: 40px 245px 40px 145px;
+    // border-top: 1px solid var(--light-grey);
+    border-top: 1px solid var(--grey);
+    cursor: pointer;
+
+    &:last-child {
+      // border-bottom: 1px solid var(--light-grey);
+      border-bottom: 1px solid var(--grey);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .follow {
+    .follow-content {
+      padding: 145px 0px 173px 48px;
+      .left {
+        h1 {
+          font-size: 80px;
+          letter-spacing: -7px;
+          line-height: 68px;
+          span {
+            font-size: 74px;
+            letter-spacing: -4.16px;
+            line-height: 52px;
+          }
+        }
+      }
+    }
+
+    .social-follow {
+      padding: 40px 120px 40px 47px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .follow {
+    .follow-content {
+      padding: 145px 36px 36px 36px;
+
+      .right {
+        display: none;
+      }
+    }
+
+    .social-follow {
+      padding: 38px 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .follow {
+    .follow-content {
+      padding: 36px 36px 36px 36px;
+      flex-direction: column;
+      align-items: flex-start;
+      .left {
+        margin-bottom: 80px;
+      }
+      .right {
+        display: none;
+      }
+    }
+
+    .social-follow {
+      padding: 38px 36px;
+    }
+  }
+}

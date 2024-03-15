@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/video-fill</title>
+    <defs>
+        <path d="M14,5 C15.1045695,5 16,5.8954305 16,7 L16,10.444 L21.3860594,6.25528714 C21.5264857,6.14606668 21.6928313,6.07678438 21.867609,6.05344028 L22,6.04463936 C22.5522847,6.04463936 23,6.49235461 23,7.04463936 L23,16.9553606 C23,17.1777365 22.9258778,17.3937684 22.7893522,17.5693013 C22.4502822,18.0052484 21.8220066,18.0837829 21.3860594,17.7447129 L16,13.555 L16,17 C16,18.1045695 15.1045695,19 14,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,7 C1,5.8954305 1.8954305,5 3,5 L14,5 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/video-fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" stroke="#757574" fill="#D8D8D8" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+        <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

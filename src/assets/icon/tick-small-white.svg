@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/tick-small-white</title>
+    <defs>
+        <path d="M16.2925399,7.29324668 C16.682869,6.90252728 17.3160339,6.90221085 17.7067533,7.29253993 C18.0974727,7.68286901 18.0977891,8.31603391 17.7074601,8.70675332 L9.70748265,16.7147307 C9.31701563,17.1055882 8.6835781,17.1057465 8.2929158,16.7150842 L5.89292258,14.315091 C5.50239829,13.9245667 5.50239829,13.2914017 5.89292258,12.9008774 C6.28344687,12.5103531 6.91661185,12.5103531 7.30713614,12.9008774 L9.00002936,14.593 L16.2925399,7.29324668 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/tick-small-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="colour/white" mask="url(#mask-2)" fill="#FFFFFF">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

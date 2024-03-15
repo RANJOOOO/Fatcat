@@ -1,0 +1,168 @@
+.application {
+  border-top: 1px solid #b2b2b2;
+  padding: 70px 0;
+  .application-content {
+    padding-left: 288px;
+    padding-right: 245px;
+    p {
+      font-weight: 600;
+      font-style: italic;
+      text-align: right;
+      text-transform: uppercase;
+      margin-bottom: 43px;
+      &:last-child {
+        text-align: left;
+        margin-bottom: 0;
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+    h1 {
+      font-weight: 400;
+    }
+    h2 {
+      font-family: "Inter";
+      border-radius: 60.75px;
+      border: 1.8px solid var(--black);
+      letter-spacing: -5.86px;
+      line-height: 74.462976px;
+      text-transform: uppercase;
+      width: fit-content;
+      padding: 20px 50px;
+      margin: 15px 0px 55px 210px;
+    }
+  }
+
+  .application-footer {
+    @include flex-center(space-between);
+    padding: 40px 238px 40px 146px;
+    margin-top: 62px;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+    cursor: pointer;
+    h4 {
+      opacity: 1;
+      color: var(--black);
+      font-family: "Inter";
+      font-size: 30px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -2.37px;
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .application .application-content {
+    padding-left: 190px;
+    padding-right: 190px;
+    h1 {
+      font-size: 83px;
+    }
+    h2 {
+      font-size: 83px;
+      padding: 6px 25px 6px 25px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .application {
+    .application-content {
+      padding-left: 208px;
+      padding-right: 129px;
+      h1 {
+        font-size: 73px;
+      }
+      h2 {
+        font-size: 73px;
+        padding: 5px 25px 5px 25px;
+        margin-left: 154px;
+      }
+    }
+    .application-footer {
+      padding: 38px 130px 40px 47px;
+      margin-top: 52px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .application {
+    .application-content {
+      padding-left: 120px;
+      padding-right: 100px;
+      h2 {
+        margin-left: 104px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .application {
+    .application-content {
+      padding-left: 36px;
+      padding-right: 36px;
+      h1 {
+        font-size: 73px;
+        margin-left: 55px;
+      }
+      h2 {
+        font-size: 73px;
+        padding: 5px 25px 5px 25px;
+      }
+    }
+    .application-footer {
+      padding: 39px 36px;
+      margin-top: 52px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .application {
+    border-top: 0;
+    padding-top: 0;
+    padding-bottom: 0px;
+    .application-content {
+      padding-left: 23px;
+      padding-right: 23px;
+      h1 {
+        font-size: 52px;
+        line-height: 54px;
+        margin-left: 0px;
+      }
+      h2 {
+        font-size: 52px;
+        line-height: 54px;
+        padding: 3px 15px 3px 15px;
+        margin: 10px 0px 60px 45px;
+      }
+      p {
+        &:first-child {
+          margin-left: 30px;
+        }
+        &:last-child img {
+          margin-right: 10px;
+        }
+      }
+    }
+    .application-footer {
+      padding: 39px 36px;
+      margin-top: 52px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .application {
+    .application-content {
+      padding-left: 23px;
+      padding-right: 23px;
+      h2 {
+        margin: 10px 0px 60px 10px;
+      }
+    }
+  }
+}

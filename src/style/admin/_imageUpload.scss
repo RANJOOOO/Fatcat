@@ -1,0 +1,29 @@
+.file-thumbnails {
+  position: relative;
+  width: fit-content;
+  .bin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+.file-thumbnail {
+  width: 206px;
+  height: 147px;
+  border: 1px dashed var(--light-grey);
+  background-color: var(--off-white);
+  position: relative;
+  @include flex-center;
+  img {
+    // opacity: 0.2;
+  }
+
+  &:hover {
+    background-color: var(--black-15);
+    transition: all 0.3s ease-in-out;
+  }
+}

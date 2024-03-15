@@ -1,0 +1,90 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@import "./variables";
+@import "./mixin";
+@import "./typography";
+@import "./global";
+@import "./animations";
+@import "./modal";
+@import "./button";
+@import "./dropdown";
+@import "./tagCheckbox";
+@import "./shared/textarea";
+@import "./shared/userProfile";
+
+// Style shared components
+@import "./navbar";
+@import "./footer";
+@import "./input";
+@import "./searchbar";
+@import "./asideFilter";
+@import "./spotlight";
+@import "./profile/artist_popup";
+@import "./loader";
+
+// home page components
+@import "./sectionHeader";
+@import "./hero";
+@import "./collection";
+@import "./news";
+@import "./artist";
+@import "./liveauction";
+@import "./application";
+@import "./follow";
+@import "./contact";
+@import "./cookies";
+
+// profile page components
+@import "./profile/profile";
+@import "./profile/profileTab";
+@import "./profile/profile_edit";
+@import "./profile/collected";
+@import "./profile/offers";
+@import "./profile/followerModal";
+@import "./profile/artLike";
+@import "./profile/offerModal";
+
+// Profile Layout
+@import "./profile/layoutGrid";
+@import "./profile/layoutArtwork";
+@import "./profile/layoutRow";
+
+// Explore pages
+@import "./explore/singleArtwork";
+@import "./explore/exploreArt";
+@import "./explore/exploreCollection";
+@import "./explore/analytics";
+@import "./explore/activity";
+
+// account
+@import "./accountSetting";
+@import "./setting/notificationSetting";
+@import "./notifications";
+
+// Stats pages
+@import url("./stats/_stats.scss");
+
+// Admin pages
+@import "./admin/_admin.scss";
+@import "./admin/spotLight";
+@import "./admin/blacklist";
+@import "./admin/imageUpload";
+@import "./admin/listTable";
+@import "./admin/siteSetting";
+@import "./admin/whiteList";
+@import "./admin/dashboard";
+@import "./admin/adminHead";
+@import "./admin/_artistApplied";
+
+// Error
+@import "./error";
+@import "./report";
+
+// create
+@import "./createArt";
+
+// banner
+
+@import "./banner";

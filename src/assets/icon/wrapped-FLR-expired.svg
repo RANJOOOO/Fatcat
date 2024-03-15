@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/wrapped-FLR-expired</title>
+    <g id="icon/wrapped-FLR-expired" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#B2B2B2" fill-rule="nonzero" cx="12" cy="12" r="11"></circle>
+        <g id="Group" transform="translate(6.998590, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M8.28256309,3.98133433 L3.05534016,3.9775301 C1.63034732,3.9775301 0.4448916,5.10696267 0.407763728,6.5589091 C0.406936774,6.59779675 0.438565796,6.62949863 0.477364062,6.62992133 L5.70458699,6.63330286 L5.70458699,6.63414824 C7.12957983,6.63414824 8.31503555,5.50471568 8.35216342,4.05276925 C8.35299038,4.0138816 8.32136136,3.98217971 8.28256309,3.98175702 L8.28256309,3.98133433 Z" id="Path"></path>
+            <path d="M10.9318099,0.00380422645 L3.05491844,0 C1.6299256,0 0.44446988,1.12943257 0.407342008,2.581379 C0.406515054,2.62026664 0.438144075,2.65196853 0.476942342,2.65239122 L8.35383382,2.65577276 L8.35383382,2.65661814 C9.77882666,2.65661814 10.9642824,1.52718558 11.0014103,0.0752391454 C11.0022372,0.0363514972 10.9706082,0.00464961011 10.9318099,0.00422691828 L10.9318099,0.00380422645 Z" id="Path"></path>
+            <ellipse id="Oval" transform="translate(1.732114, 9.265309) rotate(-22.500000) translate(-1.732114, -9.265309) " cx="1.73211415" cy="9.26530897" rx="1.32507076" ry="1.32722858"></ellipse>
+        </g>
+        <circle id="Oval" fill="#757575" cx="4.5" cy="4.5" r="4.5"></circle>
+        <text id="w" font-family="Inter-Regular_Bold-Italic, Inter" font-size="7" font-style="italic" font-weight="bold" letter-spacing="-0.175166064" fill="#FFFFFF">
+            <tspan x="1.5" y="6.2">w</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,53 @@
+.textarea-box {
+  width: 100%;
+  min-height: 41px;
+  position: relative;
+  outline: 1px solid var(--input-border);
+  border-radius: 20px;
+  overflow: hidden;
+  @include flex-center;
+  margin: 14px 0 10px 0;
+
+  img {
+    position: absolute;
+    right: 15px;
+    background: white;
+    border-radius: 70px;
+    &.abouterror {
+      top: 12.5px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 11px 19.5px;
+    overflow-y: auto;
+    border: none;
+    padding-right: 27px;
+    overflow: hidden;
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      color: var(--light-grey) !important;
+    }
+  }
+
+  &:hover {
+    outline: 1px solid var(--black);
+  }
+  &:focus-within {
+    // border: 2px solid var(--black);
+    outline: 2px solid var(--black);
+  }
+
+  // .input {
+  //   &::placeholder {
+  //     color: var(--light-grey) !important;
+  //   }
+  //   &:focus-within {
+  //     border: 1px solid red;
+  //   }
+  // }
+}

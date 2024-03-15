@@ -1,0 +1,29 @@
+.tag-check-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 10px;
+  .tag-box {
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    overflow: hidden;
+    label {
+      input[type="checkbox"]:not(:checked) + p {
+        padding: 4px 14px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: var(--white);
+        &:hover {
+          background-color: var(--lightest-grey);
+        }
+      }
+
+      input[type="checkbox"]:checked + p {
+        padding: 4px 14px;
+        background-color: var(--black);
+        color: var(--white);
+      }
+    }
+  }
+}

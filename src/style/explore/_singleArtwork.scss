@@ -1,0 +1,707 @@
+// .single-artwork {
+//   padding-top: 50px;
+//   display: flex;
+//   justify-content: space-between;
+//   padding-bottom: 150px;
+//   .left-content {
+//     width: 411px;
+//     margin-right: 30px;
+//     .collection-name {
+//       label {
+//         // cursor: pointer;
+//         &:nth-child(2) {
+//           margin-left: 14px;
+//           margin-right: 9px;
+//         }
+//         &:not(:first-child) {
+//           background-color: var(--off-white);
+//           border-radius: 6px;
+//           padding: 5px 14px;
+//         }
+//       }
+//     }
+//     h4 {
+//       font-size: 34px;
+//       font-weight: 700;
+//       letter-spacing: -1.78px;
+//       text-transform: capitalize;
+//       margin-top: 24px;
+//     }
+//     .artist-owner {
+//       margin-top: 19px;
+//       @include d-center;
+//       .user-img {
+//         width: 40px;
+//         height: 40px;
+//         padding: 1px;
+//         border: 1px solid var(--black);
+//         border-radius: 100%;
+//         margin-right: 10px;
+//       }
+//     }
+//     .divider {
+//       width: 100%;
+//       // border: 1px solid var(--lightest-grey);
+//       margin-top: 74px;
+//       margin-bottom: 41px;
+//       height: 1px;
+//       background: var(--lightest-grey);
+//     }
+//     .value {
+//       h6 {
+//         margin-left: 4px;
+//         margin-right: 6px;
+//       }
+//     }
+//     .art-btns {
+//       margin-top: 20px;
+//       .more-opt {
+//         width: 36px;
+//         height: 36px;
+//         border: 1px solid var(--black);
+//         border-radius: 100%;
+//         @include flex-center;
+//       }
+//     }
+
+//     .live-auctions {
+//       p {
+//         width: fit-content;
+//       }
+//       .input-box2 {
+//         border: 1px solid var(--medium-grey);
+//         justify-content: space-between;
+//         padding: 0 10px;
+//         height: 45px;
+//         input {
+//           padding-left: 10px;
+//         }
+//       }
+//     }
+
+//     .history {
+//       margin-top: 151px;
+//       .history-content {
+//         margin-top: 40px;
+//         position: relative;
+//         .histrory-list {
+//           display: flex;
+//           align-items: baseline;
+//           margin-bottom: 60px;
+
+//           .left {
+//             border: 1px solid var(--black);
+//             border-radius: 100%;
+//           }
+//           &.active {
+//             .left {
+//               border: none;
+//             }
+//           }
+//         }
+//         &::after {
+//           content: "";
+//           position: absolute;
+//           left: 11px;
+//           top: 10px;
+//           height: 90%;
+//           // border: 1px solid var(--lightest-grey);
+//           z-index: -1;
+//           width: 1px;
+//           background: var(--lightest-grey);
+//         }
+//         .left {
+//           background: var(--white);
+//         }
+//         .right {
+//           margin-left: 20px;
+//           p {
+//             color: var(--medium-grey);
+//             span {
+//               color: var(--black);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .right-content {
+//     .art-banner {
+//       width: 526px;
+//       height: 526px;
+//       border: 1px solid var(--black);
+
+//       position: relative;
+//       overflow: hidden;
+//       .like-btn {
+//         position: absolute;
+//         right: 35px;
+//         top: 35px;
+//         cursor: pointer;
+//         // transform: translateY(-100px);
+//         filter: invert(1);
+//         transition: all 0.3s linear;
+//       }
+//       &:hover {
+//         .like-btn {
+//           transform: translateY(0px);
+//           filter: invert(1);
+//         }
+//       }
+//     }
+//     .artwork-details {
+//       margin-top: 70px;
+//       max-width: 526px;
+//       .accordion {
+//         .accordion-item {
+//           border: none;
+//           background: transparent;
+//           border-radius: 0;
+//           border-bottom: 1px solid var(--lightest-grey);
+
+//           .accordion-button:focus {
+//             border: none;
+//             box-shadow: none;
+//           }
+//           .accordion-header {
+//             .accordion-button {
+//               padding: 0;
+//               background: transparent;
+//               border: none;
+//               box-shadow: none;
+//               border-radius: 0;
+//               label {
+//                 font-size: 18px;
+//               }
+//               &::after {
+//                 // background-image: url("../../assets/icon/chevron-down-small.svg");
+//                 background-image: url("../../assets/icon/chevron-down-small.svg");
+//               }
+//             }
+//           }
+//           .accordion-body {
+//             padding: 0 0 35px 0;
+//             .traits {
+//               display: flex;
+//               flex-wrap: wrap;
+//               gap: 10px 6px;
+//               .trait-box {
+//                 width: 126px;
+//                 height: 64px;
+//                 border-radius: 32px;
+//                 border: 1px solid var(--light-grey);
+//                 @include flex-center;
+//                 flex-direction: column;
+//               }
+//             }
+//             .details {
+//               width: fit-content;
+//               margin-bottom: 14px;
+//               @include flex-center(space-between);
+//               label {
+//                 &:first-child {
+//                   width: 160px;
+//                   margin-right: 37px;
+//                 }
+//                 &:last-child {
+//                   width: 120px;
+//                   cursor: pointer;
+//                 }
+//               }
+//             }
+//             .tags {
+//               display: flex;
+//               flex-wrap: wrap;
+//               gap: 10px;
+//               .tag-box {
+//                 border: 1px solid var(--light-grey);
+//                 border-radius: 60px;
+//                 font-family: "Inter";
+//                 padding: 2px 14px;
+//                 max-height: 2em;
+//                 @include d-center;
+//                 width: fit-content;
+//                 cursor: pointer;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 600px) {
+  .single-artwork {
+    flex-direction: column;
+    .right-content {
+      width: 100%;
+      .artwork-details {
+        margin-top: 50px;
+        width: 100%;
+        .accordion {
+          .accordion-item {
+            .accordion-body {
+              padding: 0 0 35px 0;
+              overflow: auto;
+              .traits {
+                width: fit-content;
+                flex-wrap: nowrap;
+              }
+              .tags {
+                width: fit-content;
+                flex-wrap: nowrap;
+              }
+            }
+          }
+        }
+      }
+      .art-banner {
+        width: 100%;
+        height: 367px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-bottom: 65px;
+      }
+    }
+    .left-content {
+      width: 100%;
+      .art-btns {
+        flex-wrap: wrap;
+        gap: 20px;
+        button {
+          width: 100%;
+          height: 47px;
+          border-radius: 30px;
+        }
+      }
+      .history {
+        margin-top: 60px;
+      }
+      .artist-owner {
+        margin-top: 19px;
+        align-items: flex-start;
+        gap: 25px;
+        .v-center {
+          &:first-child {
+            margin-bottom: 16px;
+            margin-right: 0px !important;
+          }
+        }
+      }
+
+      .live-auctions {
+        p {
+          width: fit-content;
+        }
+        .input-box2 {
+          border: 1px solid var(--medium-grey);
+          justify-content: space-between;
+          padding: 0 10px;
+          height: 45px;
+          max-width: 95% !important;
+          input {
+            width: 80%;
+            padding-left: 10px;
+          }
+        }
+      }
+      .divider {
+        margin: 30px 0;
+      }
+    }
+  }
+
+  .more-collections {
+    padding-bottom: 0;
+  }
+}
+
+.artwork-details {
+  padding-top: 70px;
+
+  .artwork-banner {
+    gap: 70px;
+    padding-left: 146px;
+    padding-right: 146px;
+    .left {
+      .banner-img {
+        position: relative;
+        width: 526px;
+        height: 526px;
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        .like-btn {
+          position: absolute;
+          right: 35px;
+          top: 35px;
+        }
+      }
+      .history {
+        margin-top: 151px;
+        .history-content {
+          margin-top: 40px;
+          position: relative;
+          .histrory-list {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 60px;
+
+            .left {
+              border: 1px solid var(--black);
+              border-radius: 100%;
+            }
+            &.active {
+              .left {
+                border: none;
+              }
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 11px;
+            top: 10px;
+            height: 90%;
+            // border: 1px solid var(--lightest-grey);
+            z-index: -1;
+            width: 1px;
+            background: var(--lightest-grey);
+          }
+          .left {
+            background: var(--white);
+          }
+          .right {
+            margin-left: 20px;
+            p {
+              color: var(--medium-grey);
+              span {
+                color: var(--black);
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      h3 {
+        font-size: 56px !important;
+      }
+      width: 526px;
+      .artwork-user-wrapper {
+        .collection-name {
+          label {
+            margin-left: 14px;
+            margin-right: 9px;
+            background-color: var(--off-white);
+            border-radius: 6px;
+            padding: 5px 14px;
+          }
+        }
+        border-bottom: 1px solid var(--lightest-grey);
+        padding-bottom: 50px;
+      }
+      .artwork-btns {
+        margin-top: 20px;
+      }
+    }
+  }
+  .option-btn {
+    border: 1px solid var(--black);
+    // width: 36px;
+    // height: 36px;
+    border: 1px solid var(--black);
+    // border-radius: 100%;
+    @include flex-center;
+  }
+
+  .artwork-details-content {
+    display: flex;
+    padding-left: 146px;
+    padding-right: 146px;
+    gap: 70px;
+
+    .left-content {
+      width: 526px;
+      .history {
+        .history-content {
+          margin-top: 40px;
+          position: relative;
+          .histrory-list {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 60px;
+
+            .left {
+              border: 1px solid var(--black);
+              border-radius: 100%;
+            }
+            &.active {
+              .left {
+                border: none;
+              }
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 11px;
+            top: 10px;
+            height: 90%;
+            z-index: -1;
+            width: 1px;
+            background: var(--lightest-grey);
+          }
+          .left {
+            background: var(--white);
+          }
+          .right {
+            margin-left: 20px;
+            p {
+              color: var(--medium-grey);
+              span {
+                color: var(--black);
+              }
+            }
+          }
+        }
+      }
+    }
+    .right-content {
+      width: 526px;
+      .artwork-accord {
+        width: 100%;
+        margin-top: -20px;
+        .accordion {
+          .accordion-item {
+            border: none;
+            background: transparent;
+            border-radius: 0;
+            border-bottom: 1px solid var(--lightest-grey);
+
+            .accordion-button:focus {
+              border: none;
+              box-shadow: none;
+            }
+            .accordion-header {
+              .accordion-button {
+                padding: 0;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                border-radius: 0;
+                label {
+                  font-size: 18px;
+                }
+                &::after {
+                  // background-image: url("../../assets/icon/chevron-down-small.svg");
+                  background-image: url("../../assets/icon/chevron-down-small.svg");
+                }
+              }
+            }
+            .accordion-body {
+              padding: 0 0 35px 0;
+              .traits {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px 6px;
+                .trait-box {
+                  width: 126px;
+                  height: 64px;
+                  border-radius: 32px;
+                  border: 1px solid var(--light-grey);
+                  @include flex-center;
+                  flex-direction: column;
+                }
+              }
+              .details {
+                width: fit-content;
+                margin-bottom: 14px;
+                @include flex-center(space-between);
+                label {
+                  &:first-child {
+                    width: 160px;
+                    margin-right: 37px;
+                  }
+                  &:last-child {
+                    width: 120px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.more-collections {
+  padding-bottom: 200px !important;
+  margin-top: 90px;
+  .collection-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 30px;
+    overflow: auto;
+    .collection-card {
+      display: flex;
+      flex-direction: column;
+      .head {
+        img {
+          width: 224px;
+          height: 224px;
+          object-fit: cover;
+          padding: 2px;
+          border: 1px solid var(--black);
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+      scrollbar-width: none;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .artwork-details {
+    .artwork-banner {
+      gap: 50px;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    .artwork-details-content {
+      gap: 50px;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .artwork-details {
+    .artwork-banner {
+      .left {
+        .banner-img {
+          position: relative;
+          width: 480px;
+          height: 480px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .right {
+        // background-color: red;
+        width: 480px;
+      }
+    }
+    .artwork-details-content {
+      .left-content {
+        width: 480px;
+      }
+      .right-content {
+        width: 480px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .artwork-details {
+    .artwork-banner {
+      flex-direction: column;
+      padding-left: 23px;
+      padding-right: 23px;
+      .left {
+        .banner-img {
+          position: relative;
+          width: 480px;
+          height: auto;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .right {
+        width: 530px;
+      }
+    }
+    .artwork-details-content {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-left: 23px;
+      padding-right: 23px;
+      .left-content {
+        width: 530px;
+      }
+      .right-content {
+        width: 530px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .artwork-details {
+    .artwork-banner {
+      .left {
+        .banner-img {
+          width: 100%;
+        }
+      }
+      .right {
+        width: 100%;
+        .artwork-btns {
+          margin-top: 20px;
+          flex-wrap: wrap;
+          button {
+            width: 100%;
+          }
+        }
+        .artist-owner {
+          gap: 25px !important;
+        }
+      }
+    }
+
+    .artwork-details-content {
+      .left-content {
+        width: 100%;
+      }
+      .right-content {
+        width: 100%;
+        .artwork-accord {
+          .accordion {
+            .accordion-item {
+              .accordion-body {
+                overflow: auto;
+                .traits {
+                  flex-wrap: nowrap;
+                  overflow: scroll;
+                  width: fit-content;
+                  margin-right: -24px;
+                }
+                .tag-check-boxes {
+                  flex-wrap: nowrap;
+                  overflow: scroll;
+                  align-items: center;
+                  margin-top: 10px;
+                  width: fit-content;
+                  gap: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .more-collections.site-container {
+    padding-right: 0 !important;
+  }
+}

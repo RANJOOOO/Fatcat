@@ -1,0 +1,114 @@
+.account-settings {
+  padding-top: 70px;
+  padding-left: 52px;
+  padding-right: 52px;
+
+  .acc-settings-head {
+    h3 {
+      font-size: 40px;
+      line-height: normal;
+      letter-spacing: -2.09px;
+      border-bottom: 1px solid var(--lightest-grey);
+      padding-bottom: 35px;
+      width: 100%;
+      max-width: 684px;
+    }
+    h6 {
+      max-width: 330px;
+      padding-bottom: 35px;
+      width: 100%;
+    }
+  }
+  .account-content {
+    display: flex;
+    .left-content {
+      max-width: 330px;
+      width: 100%;
+      height: 100%;
+      ul {
+        li {
+          max-width: 75%;
+          padding-right: 10px;
+          @include flex-center(space-between);
+          .profile {
+            // img {
+            //   filter: invert(1);
+            // }
+          }
+          background-size: 0px;
+          &.active {
+            background-color: var(--off-white);
+          }
+        }
+      }
+    }
+    .right-content {
+      width: 100%;
+      max-width: 684px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .account-settings {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .account-content {
+      .left-content {
+        width: 25%;
+        ul {
+          li {
+            max-width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .account-settings {
+    .account-content {
+      flex-direction: column;
+      .left-content {
+        width: 100%;
+        ul {
+          li {
+            max-width: 100%;
+          }
+        }
+      }
+      .right-content {
+        width: 100%;
+        border: none;
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .account-settings {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 35px;
+    h6 {
+      border-bottom: 1px solid var(--lightest-grey);
+      padding-bottom: 35px;
+    }
+    .account-content {
+      .right-content {
+        display: none;
+      }
+      .left-content {
+        ul {
+          li {
+            padding-right: 0;
+            &.active {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

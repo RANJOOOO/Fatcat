@@ -1,0 +1,357 @@
+.create-artwork {
+  margin-top: 90px;
+  .create-artwork-content {
+    padding: 70px 16px 200px 16px;
+    max-width: 510px;
+    width: 100%;
+    margin: 0 auto;
+
+    .upload-file {
+      // .file-thumbnail {
+      //   width: 206px;
+      //   height: 147px;
+      //   border: 1px dashed var(--light-grey);
+      //   background-color: var(--off-white);
+      //   @include flex-center;
+      //   img {
+      //     opacity: 0.2;
+      //   }
+      // }
+      label.change-btn {
+        width: 206px;
+        height: 36px;
+      }
+    }
+
+    // .input-box {
+    //   border: 1px solid var(--input-border);
+    //   height: 40px;
+    //   overflow: hidden;
+    //   padding: 0px 10px;
+    //   input {
+    //     width: 100%;
+    //     height: 100%;
+    //   }
+    //   &:hover {
+    //     border: 1px solid var(--black);
+    //   }
+    //   &:focus-within {
+    //     border: 2px solid var(--black);
+    //   }
+    // }
+    .art-name {
+      .text-box {
+        border: 1px solid var(--input-border);
+        overflow: hidden;
+        padding: 0px 10px;
+        min-height: 130px;
+        height: 100%;
+        &:focus-within {
+          border: 2px solid var(--black);
+        }
+        &:hover {
+          border: 1px solid var(--black);
+        }
+        &::placeholder {
+          color: var(--lightest-grey);
+        }
+        textarea {
+          border: none;
+          min-height: 120px;
+          width: 100%;
+          padding: 10px;
+          outline: none;
+        }
+      }
+    }
+
+    .artwork-traits {
+      .add-traits {
+        margin-top: 30px;
+        .left {
+          width: 210px;
+        }
+        .add-traits-content {
+          gap: 15px;
+        }
+      }
+      .add-btn {
+        margin-top: 34px;
+      }
+    }
+
+    .divider {
+      margin-top: 45px;
+      margin-bottom: 37px;
+      height: 1px;
+      width: 100%;
+      background: var(--lightest-grey);
+    }
+
+    .listed-preview-file {
+      width: 260px;
+      height: 147px;
+      background-color: rgb(75, 33, 33);
+      .listed-item-preview {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .listing-Summary {
+      .summary-box {
+        border: 1px solid var(--lightest-grey);
+        .box {
+          padding: 15px 11px 15px 20px;
+          border-top: 1px solid var(--lightest-grey);
+          border-bottom: 1px solid var(--lightest-grey);
+          &:first-child {
+            border-top: none;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .art-collections {
+      p {
+        display: flex;
+        // flex-direction: column;
+        // align-items: start;
+        // justify-content: flex-end !important;
+        span {
+          &:last-child {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+  .select-collection {
+    .dropdown-toggle {
+      height: 53px;
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid var(--lightest-grey);
+      width: 100%;
+      color: var(--black);
+      margin-top: 21px;
+      @include flex-center(space-between);
+      font-size: 18px;
+
+      &::after {
+        border: none;
+        content: url("../assets/icon/chevron-down-small.svg");
+        @include flex-center;
+        margin-top: 5px;
+      }
+    }
+    .dropdown-item {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+  .create-art-popup {
+    padding-top: 70px;
+    padding-bottom: 103px;
+    max-width: 497px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    @include flex-center;
+    flex-direction: column;
+    img {
+      max-height: 460px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .create-collection-popup {
+    p {
+      margin-bottom: 90px;
+    }
+    .create-new-collection {
+      max-width: 450px;
+      width: 100%;
+      height: 104px;
+      border: 1px solid var(--lightest-grey);
+      padding: 17px;
+
+      .left {
+        width: 70px;
+        height: 70px;
+        border: 1px solid var(--black);
+        @include flex-center;
+        margin-right: 16px;
+        padding: 5px;
+      }
+    }
+  }
+}
+.select-collection {
+  .dropdown-toggle {
+    height: 53px;
+    background: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--lightest-grey);
+    // width: 100%;
+    color: var(--black);
+    margin-top: 21px;
+    @include flex-center(space-between);
+    font-size: 18px;
+
+    &::after {
+      border: none;
+      content: url("../assets/icon/chevron-down-small.svg");
+      @include flex-center;
+      margin-top: 5px;
+    }
+  }
+  .dropdown-item {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+.create-art-tabs {
+  .content-wrapper {
+    width: 860px;
+    height: 490px;
+    border: 1px solid var(--black);
+    margin: 70px auto;
+    display: flex;
+
+    .left {
+      padding: 7px;
+      min-width: 208px;
+      label.small {
+        background: none !important;
+      }
+      label {
+        width: 192px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 8px;
+        img {
+          margin-right: 15px;
+        }
+        &.active {
+          background: var(--off-white);
+        }
+      }
+    }
+    .right {
+      background: rgb(99, 44, 44);
+      height: 100%;
+      width: 100%;
+      position: relative;
+      padding: 44px 35px;
+      .site-logo {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 135px;
+      }
+      h4 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .create-art-tabs {
+    .content-wrapper {
+      width: 95%;
+      min-height: unset !important;
+      height: fit-content;
+      flex-direction: column;
+      .left {
+        padding: 7px;
+        min-width: 208px;
+        label {
+          width: 100%;
+        }
+      }
+      .right {
+        padding: 44px 35px;
+        .site-logo {
+          justify-content: flex-start;
+          margin-bottom: 30px;
+        }
+        h4 {
+          font-size: 23px;
+          img {
+            width: 36px;
+            height: 36px;
+            margin-right: 8px !important;
+          }
+        }
+        p {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+// @media screen and (max-width: 767px) {
+//   .create-artwork {
+//     .create-art-popup {
+//       h4 {
+//         font-size: 32px;
+//         line-height: 35px;
+//       }
+//     }
+//     .create-artwork-content {
+//       padding: 30px 16px 150px 16px;
+//       max-width: 510px;
+//       width: 100%;
+//       margin: 0 auto;
+
+//       h4 {
+//         font-size: 32px;
+//         line-height: 35px;
+//       }
+//       .upload-file {
+//         margin-top: 30px;
+
+//         .file-thumbnail {
+//           width: 100%;
+//           height: 213px;
+//         }
+//         label.change-btn {
+//           width: 100%;
+//           height: 36px;
+//         }
+//       }
+
+//       .artwork-traits {
+//         .add-traits {
+//           .add-traits-content {
+//             gap: 10px;
+//             .input-box {
+//               input {
+//                 padding-left: 0px;
+//                 width: 100%;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+@media screen and (max-width: 900px) {
+  .create-artwork {
+    .create-art-popup,
+    .create-artwork-content {
+      h4 {
+        font-size: 32px;
+      }
+    }
+  }
+}

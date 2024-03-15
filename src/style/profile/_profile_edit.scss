@@ -1,0 +1,336 @@
+.edit-profile-modal {
+  .modal-content {
+    position: relative;
+    .modal-header {
+      padding: 27px 40px 26px 37px;
+      .modal-back {
+        width: 100%;
+        @include flex-center(flex-start);
+        img {
+          margin-right: 20px;
+        }
+      }
+      h6 {
+        font-weight: 400;
+      }
+    }
+    .modal-body {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      .body-content {
+        width: 510px;
+        padding: 20px 0;
+        .w-190 {
+          max-width: 190px;
+        }
+        .warning {
+          img {
+            margin-right: 5px;
+          }
+          color: var(--error);
+          font-weight: 500;
+          font-size: 13.5px;
+          letter-spacing: -0.71px;
+        }
+        .add-profile-img {
+          @include d-center(center);
+          gap: 12px;
+          .profile-img {
+            width: 135px;
+            height: 135px;
+            padding: 8px;
+            border: 1px solid var(--black);
+            border-radius: 100%;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            .editpen {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              transition: all 0.2s linear;
+              opacity: 0;
+            }
+            &:hover .editpen {
+              opacity: 1;
+            }
+          }
+          .add-pp {
+            color: var(--black);
+            cursor: pointer;
+            display: flex;
+            .the-first-div {
+              @include d-center(center);
+            }
+            span {
+              font-weight: 500;
+              color: var(--medium-grey);
+              margin: 0 5px;
+            }
+          }
+          p {
+            @include d-center(center);
+          }
+        }
+        .profile-form {
+          padding-top: 50px;
+          padding-bottom: 124px;
+
+          .input-form {
+            .input-label {
+              @include flex-center(space-between);
+              label {
+                color: var(--black);
+                font-weight: 600;
+                font-size: 13.5px;
+                letter-spacing: -0.71px;
+                text-transform: uppercase;
+
+                &:not(:first-child) {
+                  font-weight: 500;
+                  color: var(--medium-grey);
+                  text-transform: none;
+                }
+              }
+
+              span {
+                font-weight: 500;
+                color: var(--light-grey);
+                margin-left: 7.5px;
+                text-transform: capitalize;
+              }
+            }
+            .input-box {
+              width: 100%;
+              min-height: 41px;
+              position: relative;
+              border: 1px solid var(--input-border);
+              border-radius: 20px;
+              overflow: hidden;
+              @include flex-center;
+              margin: 14px 0 10px 0;
+
+              img {
+                position: absolute;
+                right: 15px;
+
+                &.abouterror {
+                  top: 12.5px;
+                }
+              }
+
+              textarea {
+                width: 100%;
+                min-height: 130px;
+                padding: 11px 19.5px;
+                overflow-y: auto;
+                border: none;
+                &:focus-visible {
+                  outline: none;
+                }
+                &::placeholder {
+                  color: var(--light-grey) !important;
+                }
+              }
+
+              &:hover {
+                border: 1px solid var(--black);
+              }
+              &:focus-within {
+                border: 2px solid var(--black);
+              }
+
+              .input {
+                &::placeholder {
+                  color: var(--light-grey) !important;
+                }
+                &:focus-within {
+                  border: 1px solid red;
+                }
+              }
+              .removeInputdata {
+                opacity: 0;
+              }
+              &:active .removeInputdata {
+                opacity: 1;
+              }
+            }
+          }
+
+          .divider {
+            width: 100%;
+            background-color: var(--lightest-grey);
+            height: 1px;
+          }
+          .word-counter {
+            font-weight: 500;
+          }
+          .mail-confirm-btns {
+            @include flex-center(flex-end);
+
+            // Style for screens above 500px
+            button {
+              margin-left: 10px;
+            }
+
+            // Media query for screens below 500px
+            @media (max-width: 500px) {
+              flex-direction: column; // Stack buttons vertically on smaller screens
+
+              button {
+                width: 100%; // Make the button full width
+                margin-top: 10px; // Add some spacing between stacked buttons
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .error-alert {
+      position: fixed;
+      left: 50%;
+      bottom: 37px;
+      transform: translateX(-50%);
+      @include flex-center;
+      height: 43px;
+      background-color: var(--error);
+      padding: 0 20px 0 12px;
+      border-radius: 8px;
+      img {
+        margin-right: 10px;
+      }
+      p {
+        color: var(--white);
+      }
+    }
+  }
+}
+.success-alert {
+  position: fixed;
+  left: 50%;
+  bottom: 37px;
+  transform: translateX(-50%);
+  @include flex-center;
+  height: 43px;
+  background-color: var(--success);
+  padding: 0 20px 0 12px;
+  border-radius: 8px;
+  min-width: 251px;
+  img {
+    margin-right: 10px;
+  }
+  p {
+    color: var(--white);
+  }
+}
+.email-confirm-modal {
+  background-color: #0000004d;
+  .modal-content {
+    border-radius: 0;
+    width: 722px;
+    .modal-header {
+      @include flex-center;
+      // border: none;
+      padding: 11px 15px;
+      .modal-title {
+        width: 100%;
+      }
+    }
+    .modal-body {
+      @include flex-center;
+      flex-direction: column;
+      padding-top: 48px;
+      padding-bottom: 70px;
+      .mail {
+        margin-bottom: 21px;
+      }
+      p {
+        span {
+          font-weight: 700;
+        }
+      }
+      .input-form {
+        width: 347px;
+        height: 41px;
+        border-radius: 35px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 21px;
+        margin-bottom: 45px;
+        input {
+          width: 100%;
+          height: 100%;
+          padding-left: 20px;
+          color: var(--black);
+          font-weight: 500;
+          &::placeholder {
+            color: var(--black);
+            opacity: 1;
+          }
+        }
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 15px;
+          cursor: pointer;
+        }
+      }
+
+      .c-mail-btns {
+        @include flex-center;
+        margin-top: 60px;
+        margin-left: -20px;
+        button {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .edit-profile-modal {
+    .modal-content {
+      width: 100% !important;
+      .modal-header {
+        padding: 20px;
+        .modal-back {
+          width: 60%;
+          justify-content: flex-start;
+        }
+        img {
+          margin-right: 13px;
+        }
+      }
+      .modal-body {
+        padding: 0;
+        .body-content {
+          width: 100%;
+          padding: 20px;
+          .w-190 {
+            max-width: 190px;
+          }
+          .add-profile-img {
+            justify-content: flex-start;
+            .add-pp {
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+            }
+            .profile-img {
+              margin-right: 19px;
+            }
+          }
+          .error-alert {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+:root {
+  // colors
+  --white: #ffffff;
+  --off-white: #f2f4f5;
+  --black: rgb(0, 0, 0);
+  --lightest-grey: #e5e5e5;
+  --light-grey: #b2b2b2;
+  --medium-grey: #949393;
+  --dark-grey: #fafafa;
+  --darkest-grey: #333333;
+  --light-medium-grey: "#A9A9A9";
+  --darkest-grey-25: rgba(51, 51, 51, 0.2);
+  --grey-varient-1: #979797;
+  --error: #e62e61;
+  --error-20: #e62e6133;
+  --success: #5ebb0c;
+  --warning: #f0c00e;
+  --warning-20: #fcf2cc;
+  --link-blue: #437eff;
+  --input-border: #888888;
+  --grey: #8b8d8e;
+  --modal-back: #00000080;
+  --black-15: rgba(0, 0, 0, 0.15);
+  --light-pink: #ffe7e7;
+  --light-purple: #f8eeff;
+  --light-green: #edffe7;
+  --light-yellow: #fffae7;
+  --light-blue: #e7f9ff;
+  // font
+  --didot-italic: "Didot LT W01 Italic", "Inter";
+  --didot-roman: "Didot LT W01 Roman", "Inter";
+  --button-transition: all 0.3s ease-in-out;
+  --button-primary-hover-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.2);
+  --button-primary-hover-transform: translateY(-1px);
+  --icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15),
+    0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);
+}
+
+@font-face {
+  font-family: "Didot LT W01 Italic";
+  src: url("../assets/font/Didot_Fonts/Fonts/1475712/2f0a4cb5-52da-49ad-9454-2148732dcc2c.woff"),
+    url("../assets/font/Didot_Fonts/Fonts/1475712/443d65aa-6f72-4676-9ff8-47280867f2f6.woff2");
+}
+@font-face {
+  font-family: "Didot LT W01 Roman";
+  src: url("../assets/font/Didot_Fonts/Fonts//6211577/59a8442c-41ea-4ce2-ada5-cf659f73d796.woff"),
+    url("../assets/font/Didot_Fonts/Fonts/6211577/fe7d54d8-261a-44b2-8539-5ee861b16156.woff2");
+}

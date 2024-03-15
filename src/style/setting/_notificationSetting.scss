@@ -1,0 +1,65 @@
+.settings {
+  padding-top: 70px;
+  // padding-top: 20px;
+  padding-bottom: 200px;
+  h3 {
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--lightest-grey);
+    line-height: unset;
+    letter-spacing: -1.41px;
+  }
+  h6 {
+    margin-bottom: 53px;
+  }
+  &.active {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0px;
+  }
+  .notification {
+    .notification-box {
+      border-bottom: 1px solid var(--lightest-grey);
+      p {
+        width: fit-content;
+        img {
+          margin-right: 20px;
+        }
+        &:first-child {
+          max-width: 300px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .settings {
+    padding-top: 35px;
+    padding-bottom: 130px;
+    h3 {
+      font-size: 27px;
+      padding-bottom: 30px;
+    }
+    h6 {
+      // margin-bottom: 30px;
+      margin-bottom: 0px;
+      font-style: italic;
+    }
+    .notification {
+      .notification-box {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 113px;
+        p {
+          &:first-child {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}

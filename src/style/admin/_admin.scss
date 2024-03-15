@@ -1,0 +1,77 @@
+.admin-dashbooard {
+  padding: 70px 52px;
+  position: relative;
+  .left-content {
+    width: 285px;
+    margin-right: 45px;
+    .admin-nav {
+      .admin-head {
+        padding-bottom: 55px;
+      }
+      .admin-menu-links {
+        .menu-link {
+          li {
+            &.active {
+              background: var(--off-white);
+            }
+            &:hover {
+              background: var(--off-white);
+            }
+          }
+        }
+      }
+    }
+  }
+  .right-content {
+    max-width: 700px;
+  }
+}
+.for-mobile {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .admin-dashbooard .right-content {
+    max-width: 620px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .admin-dashbooard {
+    .left-content {
+      max-width: unset;
+      width: 100%;
+      margin-right: 0;
+    }
+    .right-content {
+      display: none;
+    }
+  }
+  .for-desktop {
+    display: none !important;
+  }
+  .for-mobile {
+    display: flex !important;
+  }
+
+  .market-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-dashbooard {
+    padding: 50px 16px;
+    .left-content {
+      .admin-nav {
+        max-width: unset;
+        width: 100%;
+        .admin-menu-links {
+          .menu-link {
+            max-width: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.admin-content-head {
+  padding-bottom: 35px;
+  border-bottom: 1px solid var(--lightest-grey);
+  h3 {
+    font-size: 40px;
+    letter-spacing: -2.09px;
+    line-height: 40px;
+  }
+  button {
+    font-size: 16px;
+  }
+
+  .white-labels {
+    label {
+      height: 34px;
+      padding: 0 10px;
+      @include flex-center;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &.active {
+        color: var(--black);
+        background-color: var(--lightest-grey);
+      }
+    }
+  }
+
+  .date-range-mb {
+    .dropdown {
+      width: 146px;
+      height: 53px;
+      .dropdown-toggle {
+        border: 1px solid var(--lightest-grey);
+        background-color: transparent;
+        color: var(--black);
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        @include flex-center(space-between);
+        padding: 0 14px 0 26px;
+        text-transform: capitalize;
+        &::after {
+          border: none;
+          margin-top: 7px;
+          content: url("../../assets/icon/chevron-down-extra-small.svg") !important;
+        }
+      }
+      .dropdown-menu {
+        --bs-dropdown-min-width: unset !important;
+        width: 100% !important;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .admin-content-head {
+    padding: 16px;
+    button {
+      min-width: 100px !important;
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-content-head {
+    .date-range-mb {
+      .dropdown {
+        width: 135px;
+        height: 43px;
+        .dropdown-toggle {
+          padding: 0 14px;
+        }
+      }
+    }
+
+    h6 {
+      img {
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
